@@ -1,17 +1,9 @@
-import About from "./About";
-import Educations from "./Educations";
-import Footer from "./Footer";
-import Minigames from "./Minigames";
-import Nav from "./Nav";
-import Projects from "./Projects";
-import Skills from "./Skills";
+import Footer from "./layout/Footer";
+import Nav from "./layout/Nav";
+import Modal from "./atoms/Modal";
 
 export {
-    About,
-    Educations,
     Footer,
-    Minigames,
     Nav,
-    Projects,
-    Skills,
+    Modal,
 };

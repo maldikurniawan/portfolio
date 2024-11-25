@@ -2,13 +2,15 @@ import { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
 import {
   Nav,
+  Footer,
+} from '@/components'
+import {
   About,
   Minigames,
   Skills,
   Projects,
-  Footer,
   Educations,
-} from '@/components'
+} from '@/pages'
 
 function App() {
   const [showScrollToTop, setShowScrollToTop] = useState(false);
