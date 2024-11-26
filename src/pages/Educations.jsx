@@ -14,13 +14,13 @@ const Educations = () => {
                             alt="logo"
                             className="h-8 w-8"
                         />
-                        Universitas Lampung
+                        Lampung University
                     </div>
                     <div className='text-center text-[#e1e1e1]'>
                         Informatics Engineering
                     </div>
                     <div className='text-center text-[#d0d0d0]'>
-                        Sep 2020 - Present
+                        Sep 2020 - Dec 2024
                     </div>
                     <div className='text-center text-[#d0d0d0]'>
                         Grade: 3.82 / 4.00
