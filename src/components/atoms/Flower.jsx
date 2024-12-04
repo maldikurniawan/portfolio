@@ -15,7 +15,7 @@ const Flower = () => {
                         animationDelay: `${Math.random() * 5}s`,
                     }}
                 >
-                    <img src="assets/maple.png" alt="Flower" className="w-6 h-6" />
+                    <img src="assets/star.png" alt="Flower" className="w-6 h-6" />
                 </div>
             ))}
         </div>
