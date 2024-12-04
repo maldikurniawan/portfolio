@@ -8,28 +8,32 @@ const Projects = () => {
       image: './assets/landing-kos.jpg',
       link: 'https://rumahklatenasri.netlify.app/',
       language: 'ReactJS, Tailwind CSS',
-      description: 'A beautiful landing page for promoting rental properties.',
+      description:
+        'A beautifully designed landing page for showcasing rental properties. This project features responsive layouts, modern UI elements, and interactive components to attract potential tenants. It’s optimized for performance and accessibility.',
     },
     {
       title: 'Quran App',
       image: './assets/quranapp.jpg',
       link: 'https://maldikurniawan.github.io/quranapp/',
       language: 'ReactJS, Tailwind CSS',
-      description: 'An interactive Quran application with a modern design.',
+      description:
+        'An engaging Quran application offering a clean and intuitive design. Users can browse surahs, ayahs, and translations seamlessly. The app includes a bookmark feature and dark mode for enhanced usability.',
     },
     {
-      title: 'Sistem Buku Ilmiah',
-      image: './assets/bukuilmiah.jpg',
-      link: null,
-      language: 'Laravel, MySQL',
-      description: 'A system for managing and publishing scientific books.',
+      title: 'Wedding Template',
+      image: './assets/wedding.jpg',
+      link: 'https://wedcraft.netlify.app/',
+      language: 'ReactJS, Tailwind CSS',
+      description:
+        'A sophisticated system designed for managing wedding-related data and invitations. It allows for efficient customization and deployment, making it a perfect solution for modern wedding websites.',
     },
     {
       title: 'CACHESIM',
       image: './assets/cache.jpg',
       link: 'https://fe-cache-proxy.vercel.app/',
       language: 'ReactJS, Tailwind CSS, Django',
-      description: 'A monitoring system for cache proxy servers.',
+      description:
+        'A robust monitoring system tailored for cache proxy servers. This project features real-time analytics, server switching, and comprehensive visualizations for monitoring server performance. It is an invaluable tool for IT administrators.',
     },
   ];
 
@@ -62,7 +66,10 @@ const Projects = () => {
               src={project.image}
               alt={project.title}
             />
-            <div onClick={() => handleImageClick(project)} className="absolute cursor-pointer inset-0 flex items-center justify-center rounded-3xl text-center bg-black bg-opacity-80 font-bold text-fuchsia-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div
+              onClick={() => handleImageClick(project)}
+              className="absolute cursor-pointer inset-0 flex items-center justify-center rounded-3xl text-center bg-black bg-opacity-80 font-bold text-fuchsia-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
               {project.title}
             </div>
           </div>
@@ -72,19 +79,19 @@ const Projects = () => {
       {/* Modal */}
       <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
         {selectedProject && (
-          <div className="p-4 sm:p-6 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-3xl mx-auto">
+          <div className="p-4 sm:p-6 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl mx-auto">
             <img
               src={selectedProject.image}
               alt={selectedProject.title}
               className="rounded-lg mb-4 w-full object-cover"
             />
-            <h2 className="text-lg sm:text-xl font-bold mb-2 text-fuchsia-800 text-center">
+            <h2 className="text-lg sm:text-xl font-bold mb-2 text-fuchsia-600 text-center">
               {selectedProject.title}
             </h2>
-            <p className="text-sm sm:text-base text-gray-700 mb-4 text-center">
+            <p className="text-sm sm:text-base text-gray-700 mb-4 text-justify">
               {selectedProject.description}
             </p>
-            <p className="text-sm sm:text-base text-gray-600 mb-4 text-center">
+            <p className="text-sm sm:text-base text-gray-600 mb-4 text-left">
               <strong>Languages:</strong> {selectedProject.language}
             </p>
             {selectedProject.link && (

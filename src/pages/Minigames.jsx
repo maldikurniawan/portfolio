@@ -8,28 +8,32 @@ const Minigames = () => {
             image: './assets/magicmemmory.jpg',
             link: 'https://maldikurniawan.github.io/magic-memory/',
             language: 'ReactJS, Tailwind CSS',
-            description: 'Test your memory with this exciting magic-themed memory game!',
+            description:
+                'Test your memory skills with this thrilling magic-themed game! Match cards to reveal hidden magical symbols. With an enchanting design and responsive gameplay, its perfect for players of all ages.',
         },
         {
             title: '2048',
             image: './assets/2048.jpg',
             link: 'https://maldikurniawan.github.io/2048-animated/',
             language: 'ReactJS, SCSS',
-            description: 'Challenge yourself to achieve the 2048 tile in this classic puzzle game.',
+            description:
+                'Dive into the world of logic and strategy in this animated version of the classic 2048 puzzle game. Slide numbered tiles and merge them to reach the elusive 2048 tile while enjoying smooth animations.',
         },
         {
             title: 'Tetris',
             image: './assets/tetris.jpg',
             link: 'https://maldikurniawan.github.io/react-tetris/',
             language: 'ReactJS, CSS',
-            description: 'Enjoy this modern spin on the timeless Tetris game.',
+            description:
+                'Experience the timeless challenge of Tetris with a fresh, modern interface. Fit falling blocks into perfect rows to score points and progress through increasingly challenging levels!',
         },
         {
             title: 'Shooting Game',
             image: './assets/shooting.jpg',
             link: 'https://maldikurniawan.github.io/r3f-playroom-multiplayer-shooter-game/',
             language: 'ReactJS, Three.js',
-            description: 'Engage in a multiplayer shooter experience with 3D visuals.',
+            description:
+                'Step into a multiplayer 3D shooting arena with this action-packed game! Powered by Three.js, it delivers immersive graphics, interactive gameplay, and endless hours of competitive fun.',
         },
     ];
 
@@ -76,19 +80,19 @@ const Minigames = () => {
             {/* Modal */}
             <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
                 {selectedGame && (
-                    <div className="p-4 sm:p-6 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-3xl mx-auto">
+                    <div className="p-4 sm:p-6 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl mx-auto">
                         <img
                             src={selectedGame.image}
                             alt={selectedGame.title}
                             className="rounded-lg mb-4 w-full object-cover"
                         />
-                        <h2 className="text-lg sm:text-xl font-bold mb-2 text-fuchsia-800 text-center">
+                        <h2 className="text-lg sm:text-xl font-bold mb-2 text-fuchsia-600 text-center">
                             {selectedGame.title}
                         </h2>
-                        <p className="text-sm sm:text-base text-gray-700 mb-4 text-center">
+                        <p className="text-sm sm:text-base text-gray-700 mb-4 text-justify">
                             {selectedGame.description}
                         </p>
-                        <p className="text-sm sm:text-base text-gray-600 mb-4 text-center">
+                        <p className="text-sm sm:text-base text-gray-600 mb-4 text-left">
                             <strong>Languages:</strong> {selectedGame.language}
                         </p>
                         {selectedGame.link && (

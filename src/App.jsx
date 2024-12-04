@@ -3,6 +3,7 @@ import { FaArrowUp } from "react-icons/fa";
 import {
   Nav,
   Footer,
+  Flower,
 } from '@/components'
 import {
   About,
@@ -33,8 +34,8 @@ function App() {
   };
 
   return (
-    <div className="bg-slate-800 overflow-x-hidden">
-      <div id="stars"></div>
+    <div className="bg-gradient-to-b from-[#1E293B] via-[#0F172A] to-[#1E293B] overflow-x-hidden">
+      <Flower />
       <Nav />
       <About />
       <Educations />
@@ -58,7 +59,6 @@ function App() {
           <FaArrowUp className='w-10 h-10 p-2 bg-fuchsia-600 rounded-full' />
         </button>
       )}
-      <div id="stars2"></div>
     </div>
   )
 }

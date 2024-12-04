@@ -26,11 +26,16 @@ const About = () => {
         </p>
         <div className='flex mt-8 gap-2'>
           <div className='flex items-center justify-center'>
-            <div className='flex space-x-2 gap-2'>
-              <button className='neno-button shadow-xl hover:shadow-fuchsia-800/50 text-fuchsia-100 border-2 hover:bg-fuchsia-800 border-fuchsia-800 rounded-lg py-4 px-7 uppercase relative overflow-hidden'>
+            <div className='flex space-x-4'>
+              <button
+                className="neno-button shadow-xl hover:shadow-fuchsia-800/50 text-fuchsia-100 border-2 hover:bg-fuchsia-800 border-fuchsia-800 rounded-lg py-4 px-6 uppercase relative overflow-hidden w-36 text-center"
+              >
                 Resume
               </button>
-              <a href='mailto:akurniawan2102@gmail.com' className='neno-button shadow-xl hover:shadow-fuchsia-800/50 text-fuchsia-100 border-2 hover:bg-fuchsia-800 border-fuchsia-800 rounded-lg py-4 px-11 uppercase relative overflow-hidden'>
+              <a
+                href="mailto:akurniawan2102@gmail.com"
+                className="neno-button shadow-xl hover:shadow-fuchsia-800/50 text-fuchsia-100 border-2 hover:bg-fuchsia-800 border-fuchsia-800 rounded-lg py-4 px-6 uppercase relative overflow-hidden w-36 text-center"
+              >
                 Hire
               </a>
             </div>

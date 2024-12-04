@@ -37,8 +37,8 @@ const Nav = () => {
     <>
       <header
         className={`px-4 md:px-[80px] h-20 flex items-center justify-between w-full fixed top-0 z-40 transition-all duration-300 py-0 ${scrolled
-          ? "shadow bg-slate-900 bg-opacity-90 hover:bg-opacity-100"
-          : "shadow-none bg-slate-900"
+          ? "shadow bg-[#0F172A] bg-opacity-90 hover:bg-opacity-100"
+          : "shadow-none bg-[#0F172A]"
           }`}
       >
         <div className="font-bold text-xl flex md:text-3xl items-center gap-4 justify-center text-fuchsia-100">
