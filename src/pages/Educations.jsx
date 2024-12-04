@@ -8,7 +8,7 @@ const Educations = () => {
             </h1>
             <div className='grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-around gap-20'>
                 <h2 data-aos="fade-down">
-                    <div className='min-[500px]:text-[26px] text-xl justify-center text-center font-semibold text-fuchsia-100 text-nowrap flex items-center gap-2'>
+                    <div className='min-[500px]:text-[26px] text-xl justify-center text-center font-semibold text-white text-nowrap flex items-center gap-2'>
                         <img
                             src="./assets/logo-unila.png"
                             alt="logo"
@@ -27,7 +27,7 @@ const Educations = () => {
                     </div>
                 </h2>
                 <h2 data-aos="fade-up">
-                    <div className='min-[500px]:text-[26px] text-xl justify-center text-center font-semibold text-fuchsia-100 text-nowrap flex items-center gap-2'>
+                    <div className='min-[500px]:text-[26px] text-xl justify-center text-center font-semibold text-white text-nowrap flex items-center gap-2'>
                         <img
                             src="./assets/logo-kominfo.png"
                             alt="logo"
@@ -46,7 +46,7 @@ const Educations = () => {
                     </div>
                 </h2>
                 <h2 data-aos="fade-down">
-                    <div className='min-[500px]:text-[26px] text-xl justify-center text-center font-semibold text-fuchsia-100 text-nowrap flex items-center gap-2'>
+                    <div className='min-[500px]:text-[26px] text-xl justify-center text-center font-semibold text-white text-nowrap flex items-center gap-2'>
                         <img
                             src="./assets/logo-nf.png"
                             alt="logo"
@@ -65,7 +65,7 @@ const Educations = () => {
                     </div>
                 </h2>
                 <h2 data-aos="fade-up">
-                    <div className='min-[500px]:text-[26px] text-xl justify-center text-center font-semibold text-fuchsia-100 text-nowrap flex items-center gap-2'>
+                    <div className='min-[500px]:text-[26px] text-xl justify-center text-center font-semibold text-white text-nowrap flex items-center gap-2'>
                         <img
                             src="./assets/logo-smalan.png"
                             alt="logo"

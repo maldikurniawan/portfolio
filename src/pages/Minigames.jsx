@@ -69,7 +69,7 @@ const Minigames = () => {
                         />
                         <div
                             onClick={() => handleImageClick(game)}
-                            className="absolute cursor-pointer inset-0 flex items-center justify-center rounded-3xl text-center bg-black bg-opacity-80 font-bold text-fuchsia-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                            className="absolute cursor-pointer inset-0 flex items-center justify-center rounded-3xl text-center bg-black bg-opacity-80 font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                         >
                             {game.title}
                         </div>
