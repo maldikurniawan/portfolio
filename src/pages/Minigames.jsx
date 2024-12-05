@@ -20,12 +20,12 @@ const Minigames = () => {
                 'Dive into the world of logic and strategy in this animated version of the classic 2048 puzzle game. Slide numbered tiles and merge them to reach the elusive 2048 tile while enjoying smooth animations.',
         },
         {
-            title: 'Tetris',
-            image: './assets/tetris.jpg',
-            link: 'https://maldikurniawan.github.io/react-tetris/',
-            language: 'ReactJS, CSS',
+            title: 'Flappy Bird',
+            image: './assets/manuk.jpg',
+            link: 'https://manuklayang.netlify.app/',
+            language: 'ReactJS, CSS, Redux',
             description:
-                'Experience the timeless challenge of Tetris with a fresh, modern interface. Fit falling blocks into perfect rows to score points and progress through increasingly challenging levels!',
+                'Guide the flappy bird through an endless obstacle course. Avoid pipes and collect points by navigating through narrow gaps in this fun, fast-paced game!',
         },
         {
             title: 'Shooting Game',
