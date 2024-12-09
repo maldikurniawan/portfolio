@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme')
+// const defaultTheme = require('tailwindcss/defaultTheme')
 
 export default {
   content: [
@@ -8,9 +8,9 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['Playwrite GB S', 'Poppins', ...defaultTheme.fontFamily.sans],
-      },
+      // fontFamily: {
+      //   sans: ['Playwrite GB S', 'Poppins', ...defaultTheme.fontFamily.sans],
+      // },
     },
   },
   plugins: [],
