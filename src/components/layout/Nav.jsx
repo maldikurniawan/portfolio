@@ -37,11 +37,11 @@ const Nav = () => {
     <>
       <header
         className={`px-4 md:px-[80px] h-20 flex items-center justify-between w-full fixed top-0 z-40 transition-all duration-300 py-0 ${scrolled
-          ? "shadow bg-[#0F172A] bg-opacity-90 hover:bg-opacity-100"
-          : "shadow-none bg-[#0F172A]"
+          ? "shadow bg-white bg-opacity-90 backdrop-blur hover:bg-opacity-100"
+          : "shadow-none bg-white"
           }`}
       >
-        <div className="font-bold text-xl flex md:text-3xl items-center gap-4 justify-center text-white">
+        <div className="font-bold text-xl flex md:text-3xl items-center gap-4 justify-center text-black">
           <ScrollLink
             to="About"
             smooth={true}
@@ -59,7 +59,7 @@ const Nav = () => {
                 to={item.link}
                 smooth={true}
                 duration={500}
-                className="text-white rounded-md px-2 py-[8px] hover:bg-white hover:text-fuchsia-600 font-medium whitespace-nowrap cursor-pointer"
+                className="text-black rounded-md px-2 py-[8px] hover:bg-fuchsia-100 hover:text-fuchsia-600 font-medium whitespace-nowrap cursor-pointer"
               >
                 {item.title}
               </ScrollLink>
@@ -69,7 +69,7 @@ const Nav = () => {
 
         <button
           onClick={() => setNavOpen(true)}
-          className="block xl:hidden text-white p-5 cursor-pointer"
+          className="block xl:hidden text-black p-5 cursor-pointer"
         >
           <FaBars size={22} />
         </button>
@@ -79,7 +79,7 @@ const Nav = () => {
       <div
         ref={ref}
         style={{ right: navOpen ? "0" : "-300px" }}
-        className="fixed z-50 top-0 h-full min-[300px]:w-[300px] bg-[#0F172A]/50 backdrop-blur drop-shadow transition-all"
+        className="fixed z-50 top-0 h-full min-[300px]:w-[300px] bg-black/50 backdrop-blur drop-shadow transition-all"
       >
         <div className="flex items-center justify-end text-white p-4">
           <FaXmark
@@ -95,7 +95,7 @@ const Nav = () => {
                 smooth={true}
                 duration={500}
                 className="px-6 py-2 text-white hover:bg-white/20 font-medium whitespace-nowrap cursor-pointer rounded-lg"
-                onClick={() => setNavOpen(false)} // Close menu after click
+                onClick={() => setNavOpen(false)}
               >
                 {item.title}
               </ScrollLink>

@@ -28,12 +28,12 @@ const Minigames = () => {
                 'Guide the flappy bird through an endless obstacle course. Avoid pipes and collect points by navigating through narrow gaps in this fun, fast-paced game!',
         },
         {
-            title: 'Shooting Game',
-            image: './assets/shooting.jpg',
-            link: 'https://maldikurniawan.github.io/r3f-playroom-multiplayer-shooter-game/',
-            language: 'ReactJS, Three.js',
+            title: 'Tetris',
+            image: './assets/tetris.jpg',
+            link: 'https://tetrislite.netlify.app/',
+            language: 'ReactJS, Tailwind CSS',
             description:
-                'Step into a multiplayer 3D shooting arena with this action-packed game! Powered by Three.js, it delivers immersive graphics, interactive gameplay, and endless hours of competitive fun.',
+                'A modern and minimalist implementation of the classic Tetris game, built with ReactJS and styled using Tailwind CSS. Enjoy seamless gameplay with an elegant design and responsive layout.',
         },
     ];
 

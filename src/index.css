@@ -5,54 +5,54 @@
 @tailwind utilities;
 
 .glow {
-    transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .glow:hover {
-    box-shadow: 0 0 25px rgb(206, 71, 193);
+  box-shadow: 0 0 25px rgb(206, 71, 193);
 }
 
 .img_glow {
-    box-shadow: 0 0 55px rgb(206, 71, 193);
+  box-shadow: 0 0 55px rgb(206, 71, 193);
 }
 
 .neno_button {
-    transform: all 0.3s ease-in-out;
+  transform: all 0.3s ease-in-out;
 }
 
 .neno_button:hover {
-    box-shadow: 0 0 15px rgb(206, 71, 193);
+  box-shadow: 0 0 15px rgb(206, 71, 193);
 }
 
 .b_glow {
-    box-shadow: 0 0 15px rgb(206, 71, 193);
+  box-shadow: 0 0 15px rgb(206, 71, 193);
 }
 
 .flower {
-    animation-name: fall;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    position: absolute;
-    top: -50px;
-    opacity: 0.5;
-    pointer-events: none;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top: -50px;
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 .flower img {
-    width: 20px;
-    height: 20px;
-    object-fit: cover;
-    /* filter: brightness(0.5); */
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  /* filter: brightness(0.5); */
 }
 
 @keyframes fall {
-    0% {
-        transform: translateY(-100px) rotate(0deg);
-        opacity: 0.5;
-    }
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 0.5;
+  }
 
-    100% {
-        transform: translateY(100vh) rotate(360deg);
-        opacity: 0;
-    }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
 }

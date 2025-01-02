@@ -14,7 +14,7 @@ const Projects = () => {
     {
       title: 'Quran App',
       image: './assets/quranapp.jpg',
-      link: 'https://maldikurniawan.github.io/quranapp/',
+      link: 'https://alquranapp.vercel.app/',
       language: 'ReactJS, Tailwind CSS',
       description:
         'An engaging Quran application offering a clean and intuitive design. Users can browse surahs, ayahs, and translations seamlessly. The app includes a bookmark feature and dark mode for enhanced usability.',

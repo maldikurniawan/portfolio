@@ -8,7 +8,7 @@ const About = () => {
   }, [])
   return (
 
-    <div id='About' className='lg:px-56 px-10 lg:py-0 py-20 text-center gap-5 lg:text-start flex lg:flex-row flex-col justify-between lg:gap-28 items-center'>
+    <div id='About' className='lg:px-56 px-10 bg-[#0f172a] lg:py-0 py-20 text-center gap-5 lg:text-start flex lg:flex-row flex-col justify-between lg:gap-28 items-center'>
       <img
         data-aos="fade-down"
         src="./assets/profile.jpg"
@@ -22,7 +22,7 @@ const About = () => {
           About Me
         </h1>
         <p data-aos="fade-left">
-          Welcome to my portfolio! I am a dedicated and passionate Front-End Web Developer with a keen eye for design and a strong foundation in web technologies. Explore my work to see how I bring ideas to life through code.
+        I am a dedicated and passionate Front-End Web Developer with a keen eye for design and a strong foundation in modern web technologies. My focus lies in crafting seamless user experiences using ReactJS and Next.js, leveraging their power to build dynamic, responsive, and high-performance web applications. Explore my work to see how I bring ideas to life through clean code, innovative design, and a commitment to excellence.
         </p>
         <div className='flex mt-8 gap-2'>
           <div className='flex items-center justify-center'>
