@@ -1,88 +1,46 @@
 import React from 'react'
+import ExperienceTimeline from '../components/atoms/ExperienceTimelime'
 
 const Educations = () => {
+    const experience = [
+        {
+            title: 'Fullstack Web Developer',
+            company: 'NF Computer',
+            type: 'Education',
+            description:
+                'Completed a comprehensive Fullstack Developer training using Laravel, gaining a deep understanding of web development principles from both frontend to backend. The training covered essential Laravel concepts, API integration, and best practices for building scalable, efficient web applications. I developed the skills necessary to create a robust web-based scheduling system, ensuring seamless functionality and optimized performance throughout the development process.',
+            date: 'Febuary 2023 - June 2023',
+            url: '',
+        },
+        {
+            title: 'Frontend Developer',
+            company: 'DISKOMINFOTIK Lampung',
+            type: 'Work',
+            description:
+                'Developed an Integrated Competency Development System for State Civil Apparatus (ASN) using the Laravel platform, designed to efficiently manage, track, and enhance the competencies of ASNs within an organization. The system provides a comprehensive solution for fostering continuous professional growth, aligning skills with organizational needs, and ensuring effective competency management for ASNs at all levels.',
+            date: 'June 2023 - August 2023',
+            url: '',
+        },
+        {
+            title: 'Web Developer',
+            company: 'PT. Queen Network Nusantara',
+            type: 'Work',
+            description:
+                'As a Frontend Developer at PT Queen Network Nusantara, I built responsive landing pages and customized content management systems (CMS) using ReactJS and Tailwind CSS. I focused on creating user-friendly designs, optimizing performance, and collaborating with teams to deliver seamless and efficient web solutions that supported the companys digital growth.',
+            date: 'March 2024 - Present',
+            url: '',
+        },
+    ]
+
     return (
-        <div id='Educations' className='p-20 flex flex-col items-center justify-center'>
+        <div id='Educations' className='flex py-20 lg:px-20 flex-col items-center justify-center'>
             <h1 data-aos="fade-right" className='text-3xl font-semibold mb-20 leading-normal uppercase text-fuchsia-500'>
-                Educations
+                My Experience
             </h1>
-            <div className='grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-around gap-20'>
-                <h2 data-aos="fade-down">
-                    <div className='min-[500px]:text-[26px] text-xl justify-center text-center font-semibold text-black text-nowrap flex items-center gap-2'>
-                        <img
-                            src="./assets/logo-unila.png"
-                            alt="logo"
-                            className="h-8 w-8"
-                        />
-                        Lampung University
-                    </div>
-                    <div className='text-center text-[#e1e1e1]'>
-                        Informatics Engineering
-                    </div>
-                    <div className='text-center text-[#d0d0d0]'>
-                        Sep 2020 - Dec 2024
-                    </div>
-                    <div className='text-center text-[#d0d0d0]'>
-                        Grade: 3.82 / 4.00
-                    </div>
-                </h2>
-                <h2 data-aos="fade-up">
-                    <div className='min-[500px]:text-[26px] text-xl justify-center text-center font-semibold text-black text-nowrap flex items-center gap-2'>
-                        <img
-                            src="./assets/logo-kominfo.png"
-                            alt="logo"
-                            className="h-8 w-8"
-                        />
-                        Kominfo Lampung
-                    </div>
-                    <div className='text-center text-[#e1e1e1]'>
-                        Front-End Dev
-                    </div>
-                    <div className='text-center text-[#d0d0d0]'>
-                        Jul 2023 - Sep 2023
-                    </div>
-                    <div className='text-center text-[#d0d0d0]'>
-                        Grade: 92 / 100
-                    </div>
-                </h2>
-                <h2 data-aos="fade-down">
-                    <div className='min-[500px]:text-[26px] text-xl justify-center text-center font-semibold text-black text-nowrap flex items-center gap-2'>
-                        <img
-                            src="./assets/logo-nf.png"
-                            alt="logo"
-                            className="h-8 w-8"
-                        />
-                        NF Computer
-                    </div>
-                    <div className='text-center text-[#e1e1e1]'>
-                        Fullstack Web Dev
-                    </div>
-                    <div className='text-center text-[#d0d0d0]'>
-                        Feb 2023 - Jun 2023
-                    </div>
-                    <div className='text-center text-[#d0d0d0]'>
-                        Grade: 92 / 100
-                    </div>
-                </h2>
-                <h2 data-aos="fade-up">
-                    <div className='min-[500px]:text-[26px] text-xl justify-center text-center font-semibold text-black text-nowrap flex items-center gap-2'>
-                        <img
-                            src="./assets/logo-smalan.png"
-                            alt="logo"
-                            className="h-8 w-8"
-                        />
-                        SMAN 9 B. Lampung
-                    </div>
-                    <div className='text-center text-[#e1e1e1]'>
-                        Science
-                    </div>
-                    <div className='text-center text-[#d0d0d0]'>
-                        Aug 2017 - Apr 2020
-                    </div>
-                    <div className='text-center text-[#d0d0d0]'>
-                        Grade: 86 / 100
-                    </div>
-                </h2>
+            <div className="mx-auto mb-10 flex grid-cols-9 flex-col p-2 text-blue-50 md:grid">
+                {experience.map((data, index) => (
+                    <ExperienceTimeline position={index % 2 == 1} key={index} {...data} />
+                ))}
             </div>
         </div>
     )
