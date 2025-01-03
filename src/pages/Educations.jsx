@@ -34,10 +34,10 @@ const Educations = () => {
 
     return (
         <div id='Educations' className='flex py-20 lg:px-20 flex-col items-center justify-center'>
-            <h1 data-aos="fade-right" className='text-3xl font-semibold mb-20 leading-normal text-[#0ea5e9]'>
+            <h1 data-aos="fade-right" className='text-3xl font-semibold mb-20 leading-normal text-paleBlue'>
                 My Experience
             </h1>
-            <div className="mx-auto mb-10 flex grid-cols-9 flex-col p-2 text-blue-50 md:grid">
+            <div className="mx-auto mb-10 flex grid-cols-9 flex-col p-2 text-paleBlue/50 md:grid">
                 {experience.map((data, index) => (
                     <ExperienceTimeline position={index % 2 == 1} key={index} {...data} />
                 ))}

@@ -90,8 +90,8 @@ const Skills = () => {
   ]
 
   return (
-    <div id='Skills' className='py-20 lg:px-20 flex flex-col bg-gradient-to-b from-linearBlue/40 via-white to-linearBlue/40 bg-opacity-90 min-h-screen items-center justify-center'>
-      <h1 data-aos="fade-right" className='text-3xl font-semibold mb-20 leading-normal text-[#0ea5e9]'>
+    <div id='Skills' className='py-20 lg:px-20 flex flex-col bg-gradient-to-b from-linearBlue/40 via-white to-linearBlue/40 min-h-screen items-center justify-center'>
+      <h1 data-aos="fade-right" className='text-3xl font-semibold mb-20 leading-normal text-paleBlue'>
         Tech That I Use
       </h1>
       <div className="flex flex-wrap justify-center justify-items-center gap-5 xl:gap-10 xl:px-40 pb-10">
@@ -107,13 +107,13 @@ const Skills = () => {
               viewport={{ once: true }}
               custom={index}
               className={twMerge(
-                `flex h-24 w-24 flex-col items-center justify-center gap-y-2 rounded-2xl border-2 bg-white duration-150 hover:scale-105 hover:border-black hover:shadow-black hover:shadow-lg md:h-36 md:w-36 md:p-4`,
+                `flex h-24 w-24 flex-col items-center justify-center gap-y-2 rounded-2xl border-2 bg-white duration-150 hover:scale-105 hover:border-paleBlue hover:shadow-paleBlue hover:shadow-lg md:h-36 md:w-36 md:p-4`,
               )}
             >
               <Icons
-                className={twMerge(`text-4xl text-black-primary md:text-6xl`)}
+                className={twMerge(`text-4xl text-paleBlue md:text-6xl`)}
               />
-              <p className="text-base font-bold text-black-primary md:text-xl">
+              <p className="text-base font-bold text-paleBlue md:text-xl">
                 {data.name}
               </p>
             </motion.div>

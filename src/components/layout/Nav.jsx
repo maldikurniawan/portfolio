@@ -13,10 +13,9 @@ const Nav = () => {
 
   const menu = [
     { title: "About", link: "About" },
-    { title: "Educations", link: "Educations" },
-    { title: "Skills", link: "Skills" },
-    { title: "Projects", link: "Projects" },
-    { title: "Minigames", link: "Minigames" },
+    { title: "Experience", link: "Educations" },
+    { title: "Tech", link: "Skills" },
+    { title: "Project", link: "Projects" },
   ];
 
   useOnClickOutside(ref, () => setNavOpen(false));
@@ -41,7 +40,7 @@ const Nav = () => {
           : "shadow-none bg-transparent"
           }`}
       >
-        <div className="font-bold text-xl flex md:text-3xl items-center gap-4 justify-center text-black">
+        <div className="font-bold text-xl flex md:text-3xl items-center gap-4 justify-center text-paleBlue">
           <ScrollLink
             to="About"
             smooth={true}
@@ -59,7 +58,7 @@ const Nav = () => {
                 to={item.link}
                 smooth={true}
                 duration={500}
-                className="text-black rounded-md px-2 py-[8px] hover:bg-white hover:text-[#0284c7] font-medium whitespace-nowrap cursor-pointer"
+                className="text-paleBlue rounded-md px-2 py-[8px] hover:bg-white hover:text-[#0284c7] font-medium whitespace-nowrap cursor-pointer"
               >
                 {item.title}
               </ScrollLink>
@@ -69,7 +68,7 @@ const Nav = () => {
 
         <button
           onClick={() => setNavOpen(true)}
-          className="block xl:hidden text-black p-5 cursor-pointer"
+          className="block xl:hidden text-paleBlue p-5 cursor-pointer"
         >
           <FaBars size={22} />
         </button>
@@ -79,7 +78,7 @@ const Nav = () => {
       <div
         ref={ref}
         style={{ right: navOpen ? "0" : "-300px" }}
-        className="fixed z-50 top-0 h-full min-[300px]:w-[300px] bg-black/50 backdrop-blur drop-shadow transition-all"
+        className="fixed z-50 top-0 h-full min-[300px]:w-[300px] bg-paleBlue/50 backdrop-blur drop-shadow transition-all"
       >
         <div className="flex items-center justify-end text-white p-4">
           <FaXmark

@@ -2,13 +2,12 @@ import React from 'react'
 import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
-    <footer className='bg-[#0F172A] text-white lg:px-20 px-4 py-2'>
-      <div className="py-2 text-xs md:text-sm justify-between w-full font-semibold flex">
-        <div className='my-auto'>
-          Designed by Aldi
-        </div>
-        <div className="flex gap-4">
+    <footer className='bg-linearBlue text-black lg:px-20 px-4 py-4'>
+      <div className="flex sm:flex-row flex-col gap-1 text-xs md:text-sm justify-between w-full font-semibold">
+        <span className="my-auto">© {currentYear} - M. Aldi Kurniawan. All Rights Reserved.</span>
+        <div className="flex gap-1 sm:gap-2">
           <a href="https://github.com/maldikurniawan" target="_blank">
             <FaGithub size={26} />
           </a>

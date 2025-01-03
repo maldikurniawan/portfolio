@@ -6,7 +6,6 @@ import {
 } from '@/components'
 import {
   About,
-  Minigames,
   Skills,
   Projects,
   Educations,
@@ -120,7 +119,6 @@ function App() {
         <Educations />
         <Skills />
         <Projects />
-        <Minigames />
         <Footer />
       </div>
       {showScrollToTop && (
@@ -136,7 +134,7 @@ function App() {
             borderRadius: '5px',
             cursor: 'pointer'
           }}>
-          <FaArrowUp className='w-10 h-10 p-2 bg-fuchsia-500 rounded-full' />
+          <FaArrowUp className='w-10 h-10 p-2 bg-paleBlue rounded-full' />
         </button>
       )}
     </div>
