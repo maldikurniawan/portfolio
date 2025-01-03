@@ -8,9 +8,13 @@ export default {
   ],
   theme: {
     extend: {
-      // fontFamily: {
-      //   sans: ['Playwrite GB S', 'Poppins', ...defaultTheme.fontFamily.sans],
-      // },
+      colors: {
+        paleBlue: "#304057",
+        secondGray: "#6D6D6D",
+        secondBlack: "#151515",
+        linearBlue: "#cce4ff",
+        lightBlue: "#637C95",
+      },
     },
   },
   plugins: [],

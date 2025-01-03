@@ -51,10 +51,10 @@ const Minigames = () => {
     };
 
     return (
-        <div id="Minigames" className="p-20 bg-[#0F172A] bg-opacity-90 flex flex-col items-center justify-center">
+        <div id="Minigames" className="p-20 bg-gradient-to-b from-linearBlue/40 via-white to-linearBlue/40 min-h-screen flex flex-col items-center justify-center">
             <h1
                 data-aos="fade-right"
-                className="text-3xl font-semibold mb-20 leading-normal uppercase text-fuchsia-500"
+                className="text-3xl font-semibold mb-20 leading-normal text-fuchsia-500"
             >
                 Minigames
             </h1>

@@ -8,17 +8,17 @@ const About = () => {
   }, [])
   return (
 
-    <div id='About' className='lg:px-56 px-10 bg-[#0F172A] bg-opacity-90 min-h-screen lg:py-0 py-20 text-center gap-5 lg:text-start flex lg:flex-row flex-col justify-between lg:gap-28 items-center'>
+    <div id='About' className='lg:px-56 px-10 bg-gradient-to-b from-linearBlue/40 via-white to-linearBlue/40 min-h-screen lg:py-0 py-20 text-center gap-5 lg:text-start flex lg:flex-row flex-col justify-between lg:gap-28 items-center'>
       <img
         data-aos="fade-down"
         src="./assets/profile.jpg"
         width={200}
         height={200}
-        className='rounded border-2 p-1 mt-6 border-fuchsia-500 img_glow'
+        className='rounded border-2 p-1 mt-6 border-[#0ea5e9] img_glow'
         alt=""
       />
-      <div className='h-full lg:py-40 flex flex-col justify-center lg:items-start items-center text-white'>
-        <h1 data-aos="fade-right" className='text-3xl font-semibold mb-8 leading-normal text-fuchsia-500 uppercase text-nowrap'>
+      <div className='h-full lg:py-40 flex flex-col justify-center lg:items-start items-center text-black'>
+        <h1 data-aos="fade-right" className='text-3xl font-semibold mb-8 leading-normal text-[#0ea5e9] uppercase text-nowrap'>
           About Me
         </h1>
         <p data-aos="fade-left" className='text-justify'>
@@ -28,13 +28,13 @@ const About = () => {
           <div className='flex items-center justify-center'>
             <div className='flex space-x-4'>
               <button
-                className="neno-button shadow-xl hover:shadow-fuchsia-800/50 text-white border-2 hover:bg-fuchsia-800 border-fuchsia-800 rounded-lg py-4 px-6 uppercase relative overflow-hidden w-36 text-center"
+                className="neno-button font-bold shadow-xl hover:text-white hover:shadow-[#075985]/50 text-black border-2 hover:bg-[#075985] border-[#075985] rounded-lg py-4 px-6 uppercase relative overflow-hidden w-36 text-center"
               >
                 Resume
               </button>
               <a
                 href="mailto:akurniawan2102@gmail.com"
-                className="neno-button shadow-xl hover:shadow-fuchsia-800/50 text-white border-2 hover:bg-fuchsia-800 border-fuchsia-800 rounded-lg py-4 px-6 uppercase relative overflow-hidden w-36 text-center"
+                className="neno-button font-bold shadow-xl hover:text-white hover:shadow-[#075985]/50 text-black border-2 hover:bg-[#075985] border-[#075985] rounded-lg py-4 px-6 uppercase relative overflow-hidden w-36 text-center"
               >
                 Hire
               </a>

@@ -1,5 +1,7 @@
 import { twMerge } from 'tailwind-merge';
 import { motion } from 'framer-motion';
+import { IoCalendar } from 'react-icons/io5';
+import { MdCorporateFare } from 'react-icons/md';
 
 export default function ExperienceTimeline({
     position,
@@ -31,9 +33,15 @@ export default function ExperienceTimeline({
                 )}
             >
                 <h2 className="mb-1 text-lg font-bold md:text-2xl">{title}</h2>
-                <h4 className="text-sm font-semibold md:text-lg">{company}</h4>
-                <p className="text-base text-[#061C3D]">{date}</p>
-                <p className="overflow-hidden text-justify text-sm leading-tight text-[#42526B]">
+                <h4 className="text-sm font-semibold md:text-lg flex items-center gap-2">
+                    <MdCorporateFare />
+                    <span>{company}</span>
+                </h4>
+                <p className="text-base text-[#061C3D] flex items-center gap-2">
+                    <IoCalendar />
+                    <span>{date}</span>
+                </p>
+                <p className="overflow-hidden text-start sm:text-justify text-sm leading-tight text-[#42526B]">
                     {description}
                 </p>
             </motion.div>
@@ -53,7 +61,7 @@ function DotTimeline({ type }) {
                 initial={{ scale: 0 }}
                 transition={{ duration: 0.3 }}
                 viewport={{ once: true }}
-                className="absolute -left-4 top-1/2 -mt-10 flex h-14 w-14 rounded-full border-4 border-[#0F172A] bg-fuchsia-500 md:-left-7 md:h-20 md:w-20"
+                className="absolute -left-4 top-1/2 -mt-10 flex h-14 w-14 rounded-full border-4 border-[#0F172A] bg-[#0ea5e9] md:-left-7 md:h-20 md:w-20"
             >
                 {type === 'Work' ? (
                     <svg

@@ -101,12 +101,12 @@ function App() {
 
   return (
     <div className="relative overflow-x-hidden">
-      <Particles
+      {/* <Particles
         className="absolute inset-0 z-10"
         id="tsparticles"
         init={particlesInit}
         options={optionparticles}
-      />
+      /> */}
       <div
         style={{
           maskImage: `linear-gradient(to left top, transparent, black)`,

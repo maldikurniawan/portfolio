@@ -9,11 +9,11 @@
 }
 
 .glow:hover {
-  box-shadow: 0 0 25px rgb(206, 71, 193);
+  box-shadow: 0 0 25px #0284c7;
 }
 
 .img_glow {
-  box-shadow: 0 0 55px rgb(206, 71, 193);
+  box-shadow: 0 0 55px #0284c7;
 }
 
 .neno_button {
@@ -21,11 +21,11 @@
 }
 
 .neno_button:hover {
-  box-shadow: 0 0 15px rgb(206, 71, 193);
+  box-shadow: 0 0 15px #0284c7;
 }
 
 .b_glow {
-  box-shadow: 0 0 15px rgb(206, 71, 193);
+  box-shadow: 0 0 15px #0284c7;
 }
 
 .flower {

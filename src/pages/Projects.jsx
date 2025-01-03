@@ -51,12 +51,12 @@ const Projects = () => {
   };
 
   return (
-    <div id="Projects" className="p-20 flex flex-col items-center justify-center">
+    <div id="Projects" className="p-20 flex flex-col items-center justify-center min-h-screen">
       <h1
         data-aos="fade-right"
-        className="text-3xl font-semibold mb-20 leading-normal uppercase text-fuchsia-500"
+        className="text-3xl font-semibold mb-20 leading-normal text-fuchsia-500"
       >
-        Projects
+        My Project
       </h1>
       <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-around gap-10">
         {projectData.map((project, index) => (
