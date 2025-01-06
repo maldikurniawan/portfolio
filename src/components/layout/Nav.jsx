@@ -28,14 +28,14 @@ const Nav = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setScrolled(window.scrollY >= 100);
+      setScrolled(window.scrollY >= 1);
     });
   }, []);
 
   return (
     <>
       <header
-        className={`px-4 md:px-[80px] h-20 flex items-center justify-between w-full fixed top-0 z-40 transition-all duration-300 py-0 ${scrolled
+        className={`px-6 md:px-[120px] h-20 flex items-center justify-between w-full fixed top-0 z-40 transition-all duration-300 py-0 ${scrolled
           ? "shadow bg-[#cce4ff]/75 bg-opacity-90 backdrop-blur hover:bg-opacity-100"
           : "shadow-none bg-transparent"
           }`}
@@ -68,7 +68,7 @@ const Nav = () => {
 
         <button
           onClick={() => setNavOpen(true)}
-          className="block xl:hidden text-paleBlue p-5 cursor-pointer"
+          className="block xl:hidden text-paleBlue cursor-pointer"
         >
           <FaBars size={22} />
         </button>

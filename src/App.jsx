@@ -60,10 +60,10 @@ function App() {
     },
     particles: {
       color: {
-        value: "#c026d3",
+        value: "#637C95",
       },
       links: {
-        color: "#c026d3",
+        color: "#637C95",
         distance: 100,
         enable: true,
         opacity: 0.5,
@@ -120,23 +120,23 @@ function App() {
         <Skills />
         <Projects />
         <Footer />
+        {showScrollToTop && (
+          <button
+            onClick={scrollToTop}
+            className='opacity-100 z-40'
+            style={{
+              position: 'fixed',
+              bottom: '20px',
+              right: '20px',
+              color: '#FFF',
+              border: 'none',
+              borderRadius: '5px',
+              cursor: 'pointer'
+            }}>
+            <FaArrowUp className='w-10 h-10 p-2 bg-paleBlue rounded-full' />
+          </button>
+        )}
       </div>
-      {showScrollToTop && (
-        <button
-          onClick={scrollToTop}
-          className='opacity-100 z-40'
-          style={{
-            position: 'fixed',
-            bottom: '20px',
-            right: '20px',
-            color: '#FFF',
-            border: 'none',
-            borderRadius: '5px',
-            cursor: 'pointer'
-          }}>
-          <FaArrowUp className='w-10 h-10 p-2 bg-paleBlue rounded-full' />
-        </button>
-      )}
     </div>
   )
 }

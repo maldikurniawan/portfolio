@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className='bg-linearBlue text-black lg:px-20 px-4 py-4'>
       <div className="flex sm:flex-row flex-col gap-1 text-xs md:text-sm justify-between w-full font-semibold">
-        <span className="my-auto">© {currentYear} - M. Aldi Kurniawan. All Rights Reserved.</span>
+        <span className="my-auto">© {currentYear} - Aldi. All Rights Reserved.</span>
         <div className="flex gap-1 sm:gap-2">
           <a href="https://github.com/maldikurniawan" target="_blank">
             <FaGithub size={26} />

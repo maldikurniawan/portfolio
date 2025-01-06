@@ -29,7 +29,7 @@ export default function ProjectCard({
                 {onModalClick && (
                     <div
                         onClick={onModalClick}
-                        className="cursor-pointer rounded-full border-2 border-paleBlue bg-linearBlue/90 p-1.5 text-sm text-paleBlue hover:bg-[#155e75] lg:p-2 lg:text-base"
+                        className="cursor-pointer rounded-full border-2 border-paleBlue bg-linearBlue/90 p-1.5 text-sm text-paleBlue hover:bg-linearBlue lg:p-2 lg:text-base"
                     >
                         <HiMiniMagnifyingGlassPlus />
                     </div>
@@ -39,7 +39,7 @@ export default function ProjectCard({
                         href={repo}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="cursor-pointer rounded-full border-2 border-paleBlue bg-linearBlue/90 p-1.5 text-sm text-paleBlue hover:bg-[#155e75] lg:p-2 lg:text-base"
+                        className="cursor-pointer rounded-full border-2 border-paleBlue bg-linearBlue/90 p-1.5 text-sm text-paleBlue hover:bg-linearBlue lg:p-2 lg:text-base"
                     >
                         <FaGithub />
                     </a>
@@ -53,7 +53,7 @@ export default function ProjectCard({
                             {'('}{type}{')'}
                         </span>
                     </h1>
-                    <p className="hidden h-full text-xs font-normal text-paleBlue group-hover:block">
+                    <p className="hidden h-full text-xs font-normal text-paleBlue group-hover:block leading-4">
                         {description}
                     </p>
                 </div>
