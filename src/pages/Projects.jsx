@@ -99,11 +99,11 @@ const Projects = () => {
   };
 
   return (
-    <div id="Projects" className='py-20 lg:px-28 flex flex-col min-h-screen items-center justify-center'>
+    <div id="Projects" className='py-20 lg:px-20 flex flex-col min-h-screen items-center justify-center'>
       <h1 data-aos="fade-right" className='text-3xl font-semibold mb-20 leading-normal text-paleBlue'>
         My Project
       </h1>
-      <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-around gap-6">
+      <div className="flex flex-wrap justify-center justify-items-center gap-6">
         {projectData.map((project, index) => (
           <ProjectCard
             key={index}

@@ -35,7 +35,7 @@ const Nav = () => {
   return (
     <>
       <header
-        className={`px-6 md:px-[120px] h-20 flex items-center justify-between w-full fixed top-0 z-40 transition-all duration-300 py-0 ${scrolled
+        className={`px-6 md:px-[90px] h-20 flex items-center justify-between w-full fixed top-0 z-40 transition-all duration-300 py-0 ${scrolled
           ? "shadow bg-[#cce4ff]/75 bg-opacity-90 backdrop-blur hover:bg-opacity-100"
           : "shadow-none bg-transparent"
           }`}
