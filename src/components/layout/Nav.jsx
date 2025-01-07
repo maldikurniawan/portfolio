@@ -35,7 +35,7 @@ const Nav = () => {
   return (
     <>
       <header
-        className={`px-6 md:px-[90px] h-20 flex items-center justify-between w-full fixed top-0 z-40 transition-all duration-300 py-0 ${scrolled
+        className={`px-8 md:px-[90px] h-20 flex items-center justify-between w-full fixed top-0 z-40 transition-all duration-300 py-0 ${scrolled
           ? "shadow bg-[#cce4ff]/75 bg-opacity-90 backdrop-blur hover:bg-opacity-100"
           : "shadow-none bg-transparent"
           }`}
@@ -51,7 +51,7 @@ const Nav = () => {
           </ScrollLink>
         </div>
 
-        <div className="hidden xl:flex items-center gap-x-2">
+        <div className="hidden md:flex items-center gap-x-2">
           {menu.map((item, itemIdx) => (
             <div key={itemIdx}>
               <ScrollLink
@@ -68,7 +68,7 @@ const Nav = () => {
 
         <button
           onClick={() => setNavOpen(true)}
-          className="block xl:hidden text-paleBlue cursor-pointer"
+          className="block md:hidden text-paleBlue cursor-pointer mr-3"
         >
           <FaBars size={22} />
         </button>
@@ -82,7 +82,7 @@ const Nav = () => {
       >
         <div className="flex items-center justify-end text-white p-4">
           <FaXmark
-            className="cursor-pointer"
+            className="cursor-pointer hover:animate-spin"
             onClick={() => setNavOpen(false)}
           />
         </div>

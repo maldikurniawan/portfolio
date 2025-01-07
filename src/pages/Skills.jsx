@@ -2,30 +2,22 @@ import React from 'react'
 import {
   BiLogoTypescript,
   BiLogoJavascript,
-  BiLogoGoLang,
   BiLogoReact,
-  BiLogoNodejs,
   BiLogoPostgresql,
 } from 'react-icons/bi'
 import {
-  SiPhp,
   SiNextdotjs,
   SiLaravel,
-  SiExpress,
-  SiAdonisjs,
   SiTailwindcss,
-  SiJest,
-  SiMongodb,
   SiMysql,
-  SiFramer,
-  SiJetpackcompose,
   SiDjango,
   SiExpo,
   SiVercel,
 } from 'react-icons/si'
-import { TbBrandKotlin } from 'react-icons/tb'
 import { motion } from 'framer-motion'
 import { twMerge } from 'tailwind-merge'
+import { TextSection } from '@/components'
+import { FcAndroidOs } from 'react-icons/fc'
 
 const Skills = () => {
   const fadeInAnimationVariants = {
@@ -91,9 +83,9 @@ const Skills = () => {
 
   return (
     <div id='Skills' className='py-20 lg:px-20 flex flex-col bg-gradient-to-b from-linearBlue/40 via-white to-linearBlue/40 min-h-screen items-center justify-center'>
-      <h1 data-aos="fade-right" className='text-3xl font-semibold mb-20 leading-normal text-paleBlue'>
-        Tech That I Use
-      </h1>
+      <div data-aos="fade-right" className='text-3xl font-semibold mb-20 leading-normal text-paleBlue'>
+        <TextSection icon={<FcAndroidOs />} text="Tech That I Use" />
+      </div>
       <div className="flex flex-wrap justify-center justify-items-center gap-5 xl:gap-10 xl:px-40 pb-10">
         {/* <TechTabs /> */}
         {techIcons.map((data, index) => {
@@ -113,9 +105,9 @@ const Skills = () => {
               <Icons
                 className={twMerge(`text-4xl text-paleBlue md:text-6xl`)}
               />
-              <p className="text-base font-bold text-paleBlue md:text-xl">
+              <div className="text-base font-bold text-paleBlue md:text-xl">
                 {data.name}
-              </p>
+              </div>
             </motion.div>
           )
         })}

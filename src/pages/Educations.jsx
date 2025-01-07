@@ -1,5 +1,7 @@
 import React from 'react'
 import ExperienceTimeline from '../components/atoms/ExperienceTimelime'
+import { FcGraduationCap } from 'react-icons/fc'
+import { TextSection } from '@/components'
 
 const Educations = () => {
     const experience = [
@@ -34,9 +36,9 @@ const Educations = () => {
 
     return (
         <div id='Educations' className='flex py-20 lg:px-20 flex-col items-center justify-center'>
-            <h1 data-aos="fade-right" className='text-3xl font-semibold mb-20 leading-normal text-paleBlue'>
-                My Experience
-            </h1>
+            <div data-aos="fade-right" className='text-3xl font-semibold mb-20 leading-normal text-paleBlue'>
+                <TextSection icon={<FcGraduationCap />} text="My Experience" />
+            </div>
             <div className="mx-auto mb-10 flex grid-cols-9 flex-col p-2 text-paleBlue/50 md:grid">
                 {experience.map((data, index) => (
                     <ExperienceTimeline position={index % 2 == 1} key={index} {...data} />

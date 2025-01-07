@@ -47,15 +47,15 @@ export default function ProjectCard({
             </div>
             <div className="dark:bg-paleBlue absolute bottom-0 h-10 w-full border-t-2 border-paleBlue bg-linearBlue/90 p-2 transition-all duration-300 group-hover:h-[60%] lg:group-hover:h-2/4">
                 <div className="h-20">
-                    <h1 className="line-clamp-1 font-bold text-paleBlue group-hover:line-clamp-2">
+                    <div className="line-clamp-1 font-bold text-paleBlue group-hover:line-clamp-2">
                         {title}{' '}
                         <span className="w-full rounded-lg text-xs text-paleBlue">
                             {'('}{type}{')'}
                         </span>
-                    </h1>
-                    <p className="hidden h-full text-xs font-normal text-paleBlue group-hover:block leading-4">
+                    </div>
+                    <div className="hidden h-full text-xs font-normal text-paleBlue group-hover:block leading-4">
                         {description}
-                    </p>
+                    </div>
                 </div>
             </div>
         </motion.div>

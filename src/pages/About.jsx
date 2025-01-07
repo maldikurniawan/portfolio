@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { ScrambleText } from '@/components'
+import { TypeAnimation } from 'react-type-animation'
 
 const About = () => {
   useEffect(() => {
@@ -8,7 +10,7 @@ const About = () => {
   }, [])
   return (
 
-    <div id='About' className='lg:px-56 px-10 bg-gradient-to-b from-linearBlue/40 via-white to-linearBlue/40 min-h-screen lg:py-0 py-20 text-center gap-5 lg:text-start flex lg:flex-row flex-col justify-between lg:gap-28 items-center'>
+    <div id='About' className='lg:px-[180px] px-10 bg-gradient-to-b from-linearBlue/40 via-white to-linearBlue/40 min-h-screen lg:py-0 py-20 text-center gap-5 lg:text-start flex lg:flex-row flex-col justify-between lg:gap-28 items-center'>
       <img
         data-aos="fade-down"
         src="./assets/profile.jpg"
@@ -18,12 +20,31 @@ const About = () => {
         alt=""
       />
       <div className='h-full lg:py-40 flex flex-col justify-center lg:items-start items-center text-paleBlue'>
-        <h1 data-aos="fade-right" className='text-3xl font-semibold mb-8 leading-normal text-paleBlue uppercase text-nowrap'>
-          About Me
-        </h1>
-        <p data-aos="fade-left" className='text-justify'>
-        I am a dedicated and passionate Front-End Web Developer with a keen eye for design and a strong foundation in modern web technologies. My focus lies in crafting seamless user experiences using ReactJS and NextJS, leveraging their power to build dynamic, responsive, and high-performance web applications. Explore my work to see how I bring ideas to life through clean code, innovative design, and a commitment to excellence.
-        </p>
+        <div data-aos="fade-right" className='text-xl md:text-3xl font-semibold text-paleBlue text-nowrap'>
+          <ScrambleText>M. Aldi Kurniawan</ScrambleText>
+        </div>
+        <div className='text-xl font-bold dark:text-white md:text-3xl my-4'>
+          I&apos;m{' '}
+          <TypeAnimation
+            sequence={[
+              'Web Developer',
+              5000,
+              'Mobile Developer',
+              5000,
+              'Frontend Developer',
+              5000,
+            ]}
+            wrapper="span"
+            speed={40}
+            cursor={true}
+            repeat={Infinity}
+            style={{ fontSize: '1em', display: 'inline-block' }}
+            className="text-[#0284c7]"
+          />
+        </div>
+        <div data-aos="fade-left" className='text-justify'>
+          I am a dedicated and passionate Front-End Web Developer with a keen eye for design and a strong foundation in modern web technologies. My focus lies in crafting seamless user experiences using ReactJS and NextJS, leveraging their power to build dynamic, responsive, and high-performance web applications. Explore my work to see how I bring ideas to life through clean code, innovative design, and a commitment to excellence.
+        </div>
         <div className='flex mt-8 gap-2'>
           <div className='flex items-center justify-center'>
             <div className='flex space-x-4'>

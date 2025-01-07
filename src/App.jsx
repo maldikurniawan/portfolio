@@ -3,6 +3,7 @@ import { FaArrowUp } from "react-icons/fa";
 import {
   Nav,
   Footer,
+  Settings,
 } from '@/components'
 import {
   About,
@@ -119,21 +120,20 @@ function App() {
         <Educations />
         <Skills />
         <Projects />
+        <Settings />
         <Footer />
         {showScrollToTop && (
           <button
             onClick={scrollToTop}
-            className='opacity-100 z-40'
+            className='opacity-100 z-40 bottom-6 right-6'
             style={{
               position: 'fixed',
-              bottom: '20px',
-              right: '20px',
               color: '#FFF',
               border: 'none',
               borderRadius: '5px',
               cursor: 'pointer'
             }}>
-            <FaArrowUp className='w-10 h-10 p-2 bg-paleBlue rounded-full' />
+            <FaArrowUp className='w-10 h-10 md:w-16 md:h-16 md:p-4 p-2 bg-paleBlue rounded-full' />
           </button>
         )}
       </div>

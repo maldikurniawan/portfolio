@@ -37,13 +37,13 @@ export default function ExperienceTimeline({
                     <MdCorporateFare />
                     <span>{company}</span>
                 </h4>
-                <p className="text-base text-secondGray flex items-center gap-2">
+                <div className="text-base text-[#0284c7] flex items-center gap-2">
                     <IoCalendar />
                     <span>{date}</span>
-                </p>
-                <p className="overflow-hidden text-start sm:text-justify text-sm leading-tight text-secondGray">
+                </div>
+                <div className="overflow-hidden text-start sm:text-justify text-sm leading-tight text-secondGray">
                     {description}
-                </p>
+                </div>
             </motion.div>
             {position && <DotTimeline type={type} url={url} />}
         </motion.div>

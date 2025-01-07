@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Modal, ProjectCard } from '@/components';
+import { Modal, ProjectCard, TextSection } from '@/components';
+import { FcSmartphoneTablet } from 'react-icons/fc';
 
 const Projects = () => {
   const projectData = [
@@ -100,9 +101,9 @@ const Projects = () => {
 
   return (
     <div id="Projects" className='py-20 lg:px-20 flex flex-col min-h-screen items-center justify-center'>
-      <h1 data-aos="fade-right" className='text-3xl font-semibold mb-20 leading-normal text-paleBlue'>
-        My Project
-      </h1>
+      <div data-aos="fade-right" className='text-3xl font-semibold mb-20 leading-normal text-paleBlue'>
+        <TextSection icon={<FcSmartphoneTablet />} text="My Project" />
+      </div>
       <div className="flex flex-wrap justify-center justify-items-center gap-6">
         {projectData.map((project, index) => (
           <ProjectCard
@@ -129,12 +130,12 @@ const Projects = () => {
             <h2 className="text-lg sm:text-xl font-bold mb-2 text-paleBlue text-center">
               {selectedProject.title}
             </h2>
-            <p className="text-sm sm:text-base text-paleBlue mb-4 text-justify">
+            <div className="text-sm sm:text-base text-paleBlue mb-4 text-justify">
               {selectedProject.description}
-            </p>
-            <p className="text-sm sm:text-base text-paleBlue mb-4 text-left">
+            </div>
+            <div className="text-sm sm:text-base text-paleBlue mb-4 text-left">
               <strong>Languages:</strong> {selectedProject.language}
-            </p>
+            </div>
             {selectedProject.link && (
               <a
                 href={selectedProject.link}
