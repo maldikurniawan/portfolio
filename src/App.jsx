@@ -1,5 +1,6 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState, Fragment } from "react";
 import { FaArrowUp } from "react-icons/fa";
+import { ThemeProvider } from "@/context/ThemeContext";
 import {
   Nav,
   Footer,
@@ -100,44 +101,48 @@ function App() {
   };
 
   return (
-    <div className="relative overflow-x-hidden">
-      {/* <Particles
-        className="absolute inset-0 z-10"
-        id="tsparticles"
-        init={particlesInit}
-        options={optionparticles}
-      /> */}
-      <div
-        style={{
-          maskImage: `linear-gradient(to left top, transparent, black)`,
-          WebkitMaskImage: `linear-gradient(to left top, transparent, black)`,
-        }}
-        className="absolute z-10 inset-0 h-full w-full bg-white/50 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"
-      ></div>
-      <div className="relative z-20">
-        <Nav />
-        <About />
-        <Educations />
-        <Skills />
-        <Projects />
-        <Settings />
-        <Footer />
-        {showScrollToTop && (
-          <button
-            onClick={scrollToTop}
-            className='opacity-100 z-40 bottom-6 right-6'
+    <Fragment>
+      <ThemeProvider>
+        <div className="relative overflow-x-hidden">
+          {/* <Particles
+            className="absolute inset-0 z-10"
+            id="tsparticles"
+            init={particlesInit}
+            options={optionparticles}
+          /> */}
+          <div
             style={{
-              position: 'fixed',
-              color: '#FFF',
-              border: 'none',
-              borderRadius: '5px',
-              cursor: 'pointer'
-            }}>
-            <FaArrowUp className='w-10 h-10 md:w-16 md:h-16 md:p-4 p-2 bg-paleBlue rounded-full' />
-          </button>
-        )}
-      </div>
-    </div>
+              maskImage: `linear-gradient(to left top, transparent, black)`,
+              WebkitMaskImage: `linear-gradient(to left top, transparent, black)`,
+            }}
+            className="absolute z-10 inset-0 h-full w-full bg-white/50 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"
+          ></div>
+          <div className="relative z-20">
+            <Nav />
+            <About />
+            <Educations />
+            <Skills />
+            <Projects />
+            <Settings />
+            <Footer />
+            {showScrollToTop && (
+              <button
+                onClick={scrollToTop}
+                className='opacity-100 z-40 bottom-6 right-6'
+                style={{
+                  position: 'fixed',
+                  color: '#FFF',
+                  border: 'none',
+                  borderRadius: '5px',
+                  cursor: 'pointer'
+                }}>
+                <FaArrowUp className='w-10 h-10 md:w-16 md:h-16 p-2 text-black bg-[#0284c7] border-4 border-black rounded-full' />
+              </button>
+            )}
+          </div>
+        </div>
+      </ThemeProvider>
+    </Fragment>
   )
 }
 

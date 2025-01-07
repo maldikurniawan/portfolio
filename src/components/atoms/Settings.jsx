@@ -4,21 +4,21 @@ import {
     SpeedDialContent,
     SpeedDialHandler,
 } from '@material-tailwind/react'
-import { useContext, useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, useContext } from 'react'
+import { ThemeContext } from "@/context/ThemeContext";
 import { ThemeButton, AudioPlayer, ButtonParticles } from '@/components'
+import ruins from "/ruins.mp3";
 
 export default function Settings() {
-    const { theme, setTheme } = useContext()
-    const [petEnable, setPetEnable] = useState(false)
+    const { colorMode, setColorMode } = useContext(ThemeContext);
+    const [particlesEnable, setParticlesEnable] = useState(false)
     const [isPlaying, setIsPlaying] = useState(false)
     const [volume, setVolume] = useState(0.05)
     const audioRef = useRef(null)
 
     useEffect(() => {
         if (!audioRef.current) {
-            audioRef.current = new Audio(
-                'https://aac.saavncdn.com/051/1fef3e907319879eda1e3934f2d21ff2_320.mp4',
-            )
+            audioRef.current = new Audio(ruins)
             audioRef.current.addEventListener('ended', () => setIsPlaying(false))
         }
 
@@ -52,22 +52,22 @@ export default function Settings() {
                 <SpeedDialContent>
                     <SpeedDialAction
                         onClick={() => {
-                            setTheme(theme === 'light' ? 'dark' : 'light')
+                            setColorMode(colorMode === 'light' ? 'dark' : 'light')
                         }}
                         className="h-16 w-16 cursor-pointer rounded-full border-4 border-black bg-[#0284c7] duration-150 hover:bg-orange-primary md:right-16 md:block"
                     >
-                        <ThemeButton theme={theme} />
+                        <ThemeButton theme={colorMode} />
                     </SpeedDialAction>
                     <SpeedDialAction className="h-16 w-16 cursor-pointer rounded-full border-4 border-black bg-[#0284c7] duration-150 hover:bg-orange-primary md:right-16 md:block">
                         <AudioPlayer isPlaying={isPlaying} toggle={toggle} />
                     </SpeedDialAction>
                     <SpeedDialAction
                         onClick={() => {
-                            setPetEnable(!petEnable)
+                            setParticlesEnable(!particlesEnable)
                         }}
                         className="h-16 w-16 cursor-pointer rounded-full border-4 border-black bg-[#0284c7] duration-150 hover:bg-orange-primary md:right-16 md:block"
                     >
-                        <ButtonParticles isEnable={petEnable} />
+                        <ButtonParticles isEnable={particlesEnable} />
                     </SpeedDialAction>
                 </SpeedDialContent>
             </SpeedDial>
