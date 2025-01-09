@@ -40,7 +40,7 @@ const Nav = () => {
           : "shadow-none bg-transparent"
           }`}
       >
-        <div className="font-bold text-xl flex md:text-3xl items-center gap-4 justify-center text-paleBlue">
+        <div className={`font-bold text-xl flex md:text-3xl items-center gap-4 justify-center ${scrolled ? 'text-paleBlue' : 'text-transparent'}`}>
           <ScrollLink
             to="About"
             smooth={true}
@@ -82,7 +82,7 @@ const Nav = () => {
       >
         <div className="flex items-center justify-end text-white p-4">
           <FaXmark
-            className="cursor-pointer hover:animate-spin"
+            className="cursor-pointer"
             onClick={() => setNavOpen(false)}
           />
         </div>

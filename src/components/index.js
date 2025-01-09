@@ -10,6 +10,7 @@ import Settings from "./atoms/Settings";
 import AudioPlayer from "./atoms/AudioPlayer";
 import ButtonParticles from "./atoms/ButtonParticles";
 import ThemeButton from "./atoms/ThemeButton";
+import Particles from "./atoms/Particles";
 
 export {
     Footer,
@@ -24,4 +25,5 @@ export {
     AudioPlayer,
     ButtonParticles,
     ThemeButton,
+    Particles,
 };
