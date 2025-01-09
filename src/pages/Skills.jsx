@@ -17,7 +17,7 @@ import {
 import { motion } from 'framer-motion'
 import { twMerge } from 'tailwind-merge'
 import { TextSection } from '@/components'
-import { FcAndroidOs } from 'react-icons/fc'
+import { MdLanguage } from 'react-icons/md'
 
 const Skills = () => {
   const fadeInAnimationVariants = {
@@ -84,7 +84,7 @@ const Skills = () => {
   return (
     <div id='Skills' data-aos-delay="100" className='py-20 lg:px-20 flex flex-col bg-gradient-to-b from-linearBlue/40 via-white to-linearBlue/40 dark:from-black dark:via-paleBlue/90 dark:to-black min-h-screen items-center justify-center'>
       <div data-aos="fade-right" className='text-3xl font-semibold mb-20 leading-normal text-paleBlue'>
-        <TextSection icon={<FcAndroidOs />} text="Tech That I Use" />
+        <TextSection icon={<MdLanguage className='text-green-900'/>} text="Tech That I Use" />
       </div>
       <div className="flex flex-wrap justify-center justify-items-center gap-5 xl:gap-10 xl:px-40 pb-10">
         {/* <TechTabs /> */}
