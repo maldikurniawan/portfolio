@@ -1,8 +1,10 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useContext } from "react";
+import { ThemeContext } from "@/context/ThemeContext";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 
 const ParticlesBackground = () => {
+    const { colorMode } = useContext(ThemeContext);
     const particlesInit = useCallback(async (engine) => {
         await loadSlim(engine);
     }, []);
@@ -30,10 +32,10 @@ const ParticlesBackground = () => {
         },
         particles: {
             color: {
-                value: "#637C95",
+                value: colorMode === "dark" ? "#000" : "#0284c7",
             },
             links: {
-                color: "#637C95",
+                color: colorMode === "dark" ? "#000" : "#0284c7",
                 distance: 100,
                 enable: true,
                 opacity: 0.5,

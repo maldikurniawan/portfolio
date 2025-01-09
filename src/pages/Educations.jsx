@@ -35,7 +35,7 @@ const Educations = () => {
     ]
 
     return (
-        <div id='Educations' className='flex py-20 lg:px-20 flex-col items-center justify-center'>
+        <div id='Educations' className='flex py-20 lg:px-20 flex-col bg-gradient-to-b dark:from-black dark:via-paleBlue/90 dark:to-black items-center justify-center'>
             <div data-aos="fade-right" data-aos-delay="100" className='text-3xl font-semibold mb-20 leading-normal text-paleBlue'>
                 <TextSection icon={<FcGraduationCap />} text="My Experience" />
             </div>

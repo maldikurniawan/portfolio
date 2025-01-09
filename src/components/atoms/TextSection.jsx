@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 export default function TextSection({ classNames, text, icon }) {
     return (
         <div className={twMerge('relative font-semibold xl:text-xl', classNames)}>
-            <div className="relative mx-auto w-fit text-2xl text-paleBlue dark:text-white md:text-4xl">
+            <div className="relative mx-auto w-fit text-2xl text-paleBlue dark:text-linearBlue md:text-4xl">
                 <motion.span
                     whileInView={{ width: '100%' }}
                     initial={{ width: 0 }}

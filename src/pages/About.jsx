@@ -13,21 +13,21 @@ const About = () => {
   }, [])
   return (
 
-    <div id='About' className='lg:px-[180px] px-10 bg-gradient-to-b from-linearBlue/40 via-white to-linearBlue/40 min-h-screen lg:py-0 py-20 text-center gap-5 lg:text-start flex lg:flex-row flex-col justify-between lg:gap-28 items-center'>
+    <div id='About' className='lg:px-[180px] px-10 bg-gradient-to-b from-linearBlue/40 via-white to-linearBlue/40 dark:from-black dark:via-paleBlue/90 dark:to-black min-h-screen lg:py-0 py-20 text-center gap-5 lg:text-start flex lg:flex-row flex-col justify-between lg:gap-28 items-center'>
       <img
         data-aos="fade-down"
         data-aos-delay="1000"
         src="./assets/profile.jpg"
         width={200}
         height={200}
-        className='rounded border-2 p-1 mt-6 border-paleBlue img_glow'
+        className='rounded border-2 p-1 mt-6 border-black img_glow'
         alt=""
       />
-      <div className='h-full lg:py-40 flex flex-col justify-center lg:items-start items-center text-paleBlue'>
-        <div data-aos="fade-right" data-aos-delay="100" className='text-xl md:text-3xl font-semibold text-paleBlue text-nowrap'>
+      <div className='h-full lg:py-40 flex flex-col justify-center lg:items-start items-center text-paleBlue dark:text-linearBlue'>
+        <div data-aos="fade-right" data-aos-delay="100" className='text-xl md:text-3xl font-semibold text-paleBlue dark:text-linearBlue text-nowrap'>
           <ScrambleText>M. Aldi Kurniawan</ScrambleText>
         </div>
-        <div data-aos="fade-right" data-aos-delay="1500" className='text-xl font-bold dark:text-white md:text-3xl my-4'>
+        <div data-aos="fade-right" data-aos-delay="1500" className='text-xl font-bold md:text-3xl my-4'>
           I&apos;m{' '}
           <TypeAnimation
             sequence={[
@@ -53,13 +53,13 @@ const About = () => {
           <div className='flex items-center justify-center'>
             <div className='flex space-x-4'>
               <button
-                className="neno-button font-bold shadow-lg shadow-paleBlue hover:text-white hover:shadow-paleBlue/50 text-paleBlue border-2 hover:bg-paleBlue border-paleBlue rounded-lg py-4 px-6 uppercase relative overflow-hidden w-36 text-center"
+                className="neno_button font-bold hover:text-linearBlue text-paleBlue dark:text-linearBlue border-2 hover:bg-paleBlue border-black rounded-lg py-4 px-6 uppercase relative overflow-hidden w-36 text-center"
               >
                 Resume
               </button>
               <a
                 href="mailto:akurniawan2102@gmail.com"
-                className="neno-button font-bold shadow-lg shadow-paleBlue hover:text-white hover:shadow-paleBlue/50 text-paleBlue border-2 hover:bg-paleBlue border-paleBlue rounded-lg py-4 px-6 uppercase relative overflow-hidden w-36 text-center"
+                className="neno_button font-bold hover:text-linearBlue text-paleBlue dark:text-linearBlue border-2 hover:bg-paleBlue border-black rounded-lg py-4 px-6 uppercase relative overflow-hidden w-36 text-center"
               >
                 Hire
               </a>

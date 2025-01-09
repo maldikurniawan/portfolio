@@ -16,7 +16,7 @@ export default function ProjectCard({
             initial={{ scale: 0 }}
             transition={{ duration: 0.3 }}
             viewport={{ once: true }}
-            className="dark:border-paleBlue group relative h-36 w-[280px] cursor-pointer overflow-hidden rounded-lg border-2 border-paleBlue shadow-paleBlue object-cover shadow-lg sm:w-[360px] lg:h-44"
+            className="group relative h-36 w-[280px] cursor-pointer overflow-hidden rounded-lg border-2 border-black shadow-paleBlue dark:shadow-linearBlue object-cover shadow-lg sm:w-[360px] lg:h-44"
         >
             <img
                 src={image}
@@ -29,7 +29,7 @@ export default function ProjectCard({
                 {onModalClick && (
                     <div
                         onClick={onModalClick}
-                        className="cursor-pointer rounded-full border-2 border-paleBlue bg-linearBlue/90 p-1.5 text-sm text-paleBlue hover:bg-linearBlue lg:p-2 lg:text-base"
+                        className="cursor-pointer rounded-full border-2 border-black bg-linearBlue/90 p-1.5 text-sm text-paleBlue hover:bg-linearBlue lg:p-2 lg:text-base"
                     >
                         <HiMiniMagnifyingGlassPlus />
                     </div>
@@ -39,13 +39,13 @@ export default function ProjectCard({
                         href={repo}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="cursor-pointer rounded-full border-2 border-paleBlue bg-linearBlue/90 p-1.5 text-sm text-paleBlue hover:bg-linearBlue lg:p-2 lg:text-base"
+                        className="cursor-pointer rounded-full border-2 border-black bg-linearBlue/90 p-1.5 text-sm text-paleBlue hover:bg-linearBlue lg:p-2 lg:text-base"
                     >
                         <FaGithub />
                     </a>
                 )}
             </div>
-            <div className="dark:bg-paleBlue absolute bottom-0 h-10 w-full border-t-2 border-paleBlue bg-linearBlue/90 p-2 transition-all duration-300 group-hover:h-[60%] lg:group-hover:h-2/4">
+            <div className="absolute bottom-0 h-10 w-full border-t-2 border-black bg-linearBlue/90 p-2 transition-all duration-300 group-hover:h-[60%] lg:group-hover:h-2/4">
                 <div className="h-20">
                     <div className="line-clamp-1 font-bold text-paleBlue group-hover:line-clamp-2">
                         {title}{' '}

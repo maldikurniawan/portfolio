@@ -82,7 +82,7 @@ const Skills = () => {
   ]
 
   return (
-    <div id='Skills' data-aos-delay="100" className='py-20 lg:px-20 flex flex-col bg-gradient-to-b from-linearBlue/40 via-white to-linearBlue/40 min-h-screen items-center justify-center'>
+    <div id='Skills' data-aos-delay="100" className='py-20 lg:px-20 flex flex-col bg-gradient-to-b from-linearBlue/40 via-white to-linearBlue/40 dark:from-black dark:via-paleBlue/90 dark:to-black min-h-screen items-center justify-center'>
       <div data-aos="fade-right" className='text-3xl font-semibold mb-20 leading-normal text-paleBlue'>
         <TextSection icon={<FcAndroidOs />} text="Tech That I Use" />
       </div>
@@ -99,7 +99,7 @@ const Skills = () => {
               viewport={{ once: true }}
               custom={index}
               className={twMerge(
-                `flex h-24 w-24 flex-col items-center justify-center gap-y-2 rounded-2xl border-2 bg-white duration-150 hover:scale-105 hover:border-paleBlue hover:shadow-paleBlue hover:shadow-lg md:h-36 md:w-36 md:p-4`,
+                `flex h-24 w-24 flex-col items-center justify-center gap-y-2 rounded-2xl border-2 bg-white dark:bg-linearBlue duration-150 hover:scale-105 hover:border-black hover:shadow-paleBlue dark:hover:shadow-linearBlue hover:shadow-lg md:h-36 md:w-36 md:p-4`,
               )}
             >
               <Icons

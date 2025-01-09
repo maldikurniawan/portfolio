@@ -45,7 +45,7 @@ function App() {
               maskImage: `linear-gradient(to left top, transparent, black)`,
               WebkitMaskImage: `linear-gradient(to left top, transparent, black)`,
             }}
-            className="absolute z-10 inset-0 h-full w-full bg-white/50 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"
+            className="absolute z-10 inset-0 h-full w-full bg-white/50 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] dark:bg-black/50 dark:bg-[linear-gradient(to_right,#FFF_1px,transparent_1px),linear-gradient(to_bottom,#FFF_1px,transparent_1px)]"
           ></div>
           <div className="relative z-20">
             <Nav />
@@ -53,7 +53,7 @@ function App() {
             <Educations />
             <Skills />
             <Projects />
-            <Settings setParticlesEnable={setParticlesEnable}/>
+            <Settings setParticlesEnable={setParticlesEnable} />
             <Footer />
             {showScrollToTop && (
               <button

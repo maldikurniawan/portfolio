@@ -26,7 +26,7 @@ export default function ExperienceTimeline({
                 transition={{ duration: 0.3 }}
                 viewport={{ once: true }}
                 className={twMerge(
-                    'flex w-full flex-col gap-3 rounded-xl border-4 border-paleBlue bg-white p-4 text-paleBlue shadow md:w-5/6',
+                    'flex w-full flex-col gap-3 rounded-xl border-4 border-black bg-white dark:bg-linearBlue p-4 text-paleBlue shadow md:w-5/6',
                     position
                         ? 'col-start-1 col-end-5 my-4 ml-auto'
                         : 'col-start-6 col-end-10 my-4 mr-auto'
@@ -54,14 +54,14 @@ function DotTimeline({ type }) {
     return (
         <div className="relative col-start-5 col-end-6 mr-6 md:mx-auto md:mr-10">
             <div className="flex h-full w-6 items-center justify-center">
-                <div className="pointer-events-none h-full w-1 bg-paleBlue"></div>
+                <div className="pointer-events-none h-full w-1 bg-black"></div>
             </div>
             <motion.div
                 whileInView={{ scale: 1 }}
                 initial={{ scale: 0 }}
                 transition={{ duration: 0.3 }}
                 viewport={{ once: true }}
-                className="absolute -left-4 top-1/2 -mt-10 flex h-14 w-14 rounded-full border-4 border-paleBlue bg-linearBlue md:-left-7 md:h-20 md:w-20"
+                className="absolute -left-4 top-1/2 -mt-10 flex h-14 w-14 rounded-full border-4 border-black bg-linearBlue md:-left-7 md:h-20 md:w-20"
             >
                 {type === 'Work' ? (
                     <svg

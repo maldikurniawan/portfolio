@@ -36,11 +36,11 @@ const Nav = () => {
     <>
       <header
         className={`px-8 md:px-[90px] h-20 flex items-center justify-between w-full fixed top-0 z-40 transition-all duration-300 py-0 ${scrolled
-          ? "shadow bg-[#cce4ff]/75 bg-opacity-90 backdrop-blur hover:bg-opacity-100"
+          ? "shadow bg-linearBlue/75 dark:bg-paleBlue/75 bg-opacity-90 backdrop-blur hover:bg-opacity-100"
           : "shadow-none bg-transparent"
           }`}
       >
-        <div className={`font-bold text-xl flex md:text-3xl items-center gap-4 justify-center ${scrolled ? 'text-paleBlue' : 'text-transparent'}`}>
+        <div className={`font-bold text-xl flex md:text-3xl items-center gap-4 justify-center ${scrolled ? 'text-paleBlue dark:text-linearBlue' : 'text-transparent'}`}>
           <ScrollLink
             to="About"
             smooth={true}
@@ -58,7 +58,7 @@ const Nav = () => {
                 to={item.link}
                 smooth={true}
                 duration={500}
-                className="text-paleBlue rounded-md px-2 py-[8px] hover:bg-white hover:text-[#0284c7] font-medium whitespace-nowrap cursor-pointer"
+                className="text-paleBlue dark:text-linearBlue rounded-md px-2 py-[8px] hover:bg-white hover:text-[#0284c7] font-medium whitespace-nowrap cursor-pointer"
               >
                 {item.title}
               </ScrollLink>
@@ -68,7 +68,7 @@ const Nav = () => {
 
         <button
           onClick={() => setNavOpen(true)}
-          className="block md:hidden text-paleBlue cursor-pointer mr-3"
+          className="block md:hidden text-paleBlue dark:text-linearBlue cursor-pointer"
         >
           <FaBars size={22} />
         </button>
