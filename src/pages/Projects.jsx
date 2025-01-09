@@ -6,18 +6,18 @@ const Projects = () => {
   const projectData = [
     {
       title: 'Landing Kos',
-      type: 'Landing Page',
+      type: 'Website',
       img: './assets/landing-kos.jpg',
       link: 'https://rumahklatenasri.netlify.app/',
       repo: 'https://github.com/maldikurniawan/landing-kos',
-      language: 'ReactJS, Tailwind CSS',
+      language: 'ReactJS, Tailwind CSS, AOS',
       description:
         'A beautifully designed landing page for showcasing rental properties. This project features responsive layouts, modern UI elements, and interactive components to attract potential tenants. It’s optimized for performance and accessibility.',
     },
     {
       title: 'Quran App',
-      type: 'Web APP',
-      img: './assets/quranapp.jpg',
+      type: 'Website',
+      img: './assets/quranapp.png',
       link: 'https://alquranapp.vercel.app/',
       repo: 'https://github.com/maldikurniawan/quranapp',
       language: 'ReactJS, Tailwind CSS',
@@ -25,8 +25,8 @@ const Projects = () => {
         'An engaging Quran application offering a clean and intuitive design. Users can browse surahs, ayahs, and translations seamlessly. The app includes a bookmark feature and dark mode for enhanced usability.',
     },
     {
-      title: 'Wedding Template',
-      type: 'Landing Page',
+      title: 'Wed Template',
+      type: 'Website',
       img: './assets/wedding.jpg',
       link: 'https://wedcraft.netlify.app/',
       repo: 'https://github.com/maldikurniawan/wedding',
@@ -36,7 +36,7 @@ const Projects = () => {
     },
     {
       title: 'CACHESIM',
-      type: 'Dashboard',
+      type: 'Website',
       img: './assets/cache.jpg',
       link: 'https://fe-cache-proxy.vercel.app/',
       repo: 'https://github.com/maldikurniawan/fe-cache-proxy',
@@ -47,7 +47,7 @@ const Projects = () => {
     {
       title: 'Magic Memory',
       type: 'Game',
-      img: './assets/magicmemmory.jpg',
+      img: './assets/match-game.png',
       link: 'https://maldikurniawan.github.io/magic-memory/',
       repo: 'https://github.com/maldikurniawan/magic-memory',
       language: 'ReactJS, Tailwind CSS',
@@ -57,7 +57,7 @@ const Projects = () => {
     {
       title: '2048',
       type: 'Game',
-      img: './assets/2048.jpg',
+      img: './assets/2048.png',
       link: 'https://maldikurniawan.github.io/2048-animated/',
       repo: 'https://github.com/maldikurniawan/2048-animated',
       language: 'ReactJS, SCSS',
@@ -67,7 +67,7 @@ const Projects = () => {
     {
       title: 'Flappy Bird',
       type: 'Game',
-      img: './assets/manuk.jpg',
+      img: './assets/manuk-layang.png',
       link: 'https://manuklayang.netlify.app/',
       repo: 'https://github.com/maldikurniawan/flappy-bird',
       language: 'ReactJS, CSS, Redux',
@@ -77,12 +77,22 @@ const Projects = () => {
     {
       title: 'Tetris',
       type: 'Game',
-      img: './assets/tetris.jpg',
+      img: './assets/tetris.png',
       link: 'https://tetrislite.netlify.app/',
       repo: 'https://github.com/maldikurniawan/tetris',
       language: 'ReactJS, Tailwind CSS',
       description:
         'A modern and minimalist implementation of the classic Tetris game, built with ReactJS and styled using Tailwind CSS. Enjoy seamless gameplay with an elegant design and responsive layout.',
+    },
+    {
+      title: 'GRAHASIP',
+      type: 'Website',
+      img: './assets/grahasip.jpg',
+      link: 'https://grahasip.vercel.app/',
+      repo: 'https://github.com/maldikurniawan/fe-grahasip',
+      language: 'NextJS, Tailwind CSS, Django',
+      description:
+        "Graha Skrip Infra Prima is a website designed to promote products manufactured by the company. It serves as an online platform to showcase their offerings, attract customers, and provide detailed information about their products and services.",
     },
   ];
 
@@ -101,7 +111,7 @@ const Projects = () => {
 
   return (
     <div id="Projects" className='py-20 lg:px-20 flex flex-col min-h-screen items-center justify-center'>
-      <div data-aos="fade-right" className='text-3xl font-semibold mb-20 leading-normal text-paleBlue'>
+      <div data-aos="fade-right" data-aos-delay="100" className='text-3xl font-semibold mb-20 leading-normal text-paleBlue'>
         <TextSection icon={<FcSmartphoneTablet />} text="My Project" />
       </div>
       <div className="flex flex-wrap justify-center justify-items-center gap-6">

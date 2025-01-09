@@ -66,7 +66,7 @@ function App() {
                   borderRadius: '5px',
                   cursor: 'pointer'
                 }}>
-                <FaArrowUp className='w-10 h-10 md:w-16 md:h-16 p-2 text-black bg-[#0284c7] border-4 border-black rounded-full' />
+                <FaArrowUp className='w-10 h-10 md:w-16 md:h-16 p-2 md:text-black bg-[#0284c7] md:border-4 border-black rounded-full' />
               </button>
             )}
           </div>

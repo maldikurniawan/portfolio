@@ -13,31 +13,34 @@ import { AiFillSound } from 'react-icons/ai';
 
 export default function Settings({ setParticlesEnable }) {
     const { colorMode, setColorMode } = useContext(ThemeContext);
-    const Particles = () => {
-        setParticlesEnable(true);
+    const [particlesEnabled, setParticlesEnabled] = useState(false);
+    const [isPlaying, setIsPlaying] = useState(false);
+    const [volume, setVolume] = useState(0.05);
+    const audioRef = useRef(null);
+
+    const toggleParticles = () => {
+        setParticlesEnabled((prev) => !prev); // Toggle the state
+        setParticlesEnable(!particlesEnabled); // Update the parent state
     };
-    const [isPlaying, setIsPlaying] = useState(false)
-    const [volume, setVolume] = useState(0.05)
-    const audioRef = useRef(null)
 
     useEffect(() => {
         if (!audioRef.current) {
-            audioRef.current = new Audio(ruins)
-            audioRef.current.addEventListener('ended', () => setIsPlaying(false))
+            audioRef.current = new Audio(ruins);
+            audioRef.current.addEventListener('ended', () => setIsPlaying(false));
         }
 
-        const audio = audioRef.current
-        audio.volume = 0.05
+        const audio = audioRef.current;
+        audio.volume = 0.05;
 
-        isPlaying ? audio.play() : audio.pause()
+        isPlaying ? audio.play() : audio.pause();
 
         return () => {
-            audio.pause()
-            audio.removeEventListener('ended', () => setIsPlaying(false))
-        }
-    }, [isPlaying])
+            audio.pause();
+            audio.removeEventListener('ended', () => setIsPlaying(false));
+        };
+    }, [isPlaying]);
 
-    const toggle = () => setIsPlaying(!isPlaying)
+    const toggle = () => setIsPlaying(!isPlaying);
 
     return (
         <div className="fixed bottom-6 left-6 hidden w-full items-center space-x-5 md:flex">
@@ -50,7 +53,7 @@ export default function Settings({ setParticlesEnable }) {
                 <SpeedDialContent>
                     <SpeedDialAction
                         onClick={() => {
-                            setColorMode(colorMode === 'light' ? 'dark' : 'light')
+                            setColorMode(colorMode === 'light' ? 'dark' : 'light');
                         }}
                         className="h-16 w-16 cursor-pointer rounded-full border-4 border-black bg-[#0284c7] duration-150 hover:bg-orange-primary md:right-16 md:block"
                     >
@@ -60,10 +63,10 @@ export default function Settings({ setParticlesEnable }) {
                         <AudioPlayer isPlaying={isPlaying} toggle={toggle} />
                     </SpeedDialAction>
                     <SpeedDialAction
-                        onClick={Particles}
+                        onClick={toggleParticles}
                         className="h-16 w-16 cursor-pointer rounded-full border-4 border-black bg-[#0284c7] duration-150 hover:bg-orange-primary md:right-16 md:block"
                     >
-                        <ButtonParticles onClick={Particles} />
+                        <ButtonParticles isEnable={particlesEnabled} />
                     </SpeedDialAction>
                 </SpeedDialContent>
             </SpeedDial>
@@ -77,12 +80,12 @@ export default function Settings({ setParticlesEnable }) {
                         className="h-8 w-20 accent-white"
                         value={volume * 100}
                         onChange={(e) => {
-                            setVolume(parseInt(e.target.value) / 100)
-                            audioRef.current.volume = parseInt(e.target.value) / 100
+                            setVolume(parseInt(e.target.value) / 100);
+                            audioRef.current.volume = parseInt(e.target.value) / 100;
                         }}
                     />
                 </div>
             )}
         </div>
-    )
+    );
 }

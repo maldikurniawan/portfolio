@@ -6,13 +6,17 @@ import { TypeAnimation } from 'react-type-animation'
 
 const About = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
   }, [])
   return (
 
     <div id='About' className='lg:px-[180px] px-10 bg-gradient-to-b from-linearBlue/40 via-white to-linearBlue/40 min-h-screen lg:py-0 py-20 text-center gap-5 lg:text-start flex lg:flex-row flex-col justify-between lg:gap-28 items-center'>
       <img
         data-aos="fade-down"
+        data-aos-delay="1000"
         src="./assets/profile.jpg"
         width={200}
         height={200}
@@ -20,10 +24,10 @@ const About = () => {
         alt=""
       />
       <div className='h-full lg:py-40 flex flex-col justify-center lg:items-start items-center text-paleBlue'>
-        <div data-aos="fade-right" className='text-xl md:text-3xl font-semibold text-paleBlue text-nowrap'>
+        <div data-aos="fade-right" data-aos-delay="100" className='text-xl md:text-3xl font-semibold text-paleBlue text-nowrap'>
           <ScrambleText>M. Aldi Kurniawan</ScrambleText>
         </div>
-        <div className='text-xl font-bold dark:text-white md:text-3xl my-4'>
+        <div data-aos="fade-right" data-aos-delay="1500" className='text-xl font-bold dark:text-white md:text-3xl my-4'>
           I&apos;m{' '}
           <TypeAnimation
             sequence={[
@@ -42,7 +46,7 @@ const About = () => {
             className="text-[#0284c7]"
           />
         </div>
-        <div data-aos="fade-left" className='text-justify'>
+        <div data-aos="fade-right" data-aos-delay="2000" className='text-justify'>
           I am a dedicated and passionate Front-End Web Developer with a keen eye for design and a strong foundation in modern web technologies. My focus lies in crafting seamless user experiences using ReactJS and NextJS, leveraging their power to build dynamic, responsive, and high-performance web applications. Explore my work to see how I bring ideas to life through clean code, innovative design, and a commitment to excellence.
         </div>
         <div className='flex mt-8 gap-2'>

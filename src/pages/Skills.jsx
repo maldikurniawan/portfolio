@@ -82,7 +82,7 @@ const Skills = () => {
   ]
 
   return (
-    <div id='Skills' className='py-20 lg:px-20 flex flex-col bg-gradient-to-b from-linearBlue/40 via-white to-linearBlue/40 min-h-screen items-center justify-center'>
+    <div id='Skills' data-aos-delay="100" className='py-20 lg:px-20 flex flex-col bg-gradient-to-b from-linearBlue/40 via-white to-linearBlue/40 min-h-screen items-center justify-center'>
       <div data-aos="fade-right" className='text-3xl font-semibold mb-20 leading-normal text-paleBlue'>
         <TextSection icon={<FcAndroidOs />} text="Tech That I Use" />
       </div>
