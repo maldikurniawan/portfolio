@@ -46,7 +46,7 @@ export default function Settings({ setParticlesEnable }) {
         <div className="fixed bottom-6 left-6 hidden w-full items-center space-x-5 md:flex">
             <SpeedDial className="z-10">
                 <SpeedDialHandler>
-                    <button className="h-16 w-16 cursor-pointer rounded-full border-4 border-black bg-[#0284c7] duration-150 hover:-rotate-90 md:right-16 md:block">
+                    <button className="h-16 w-16 cursor-pointer rounded-full border-4 border-black bg-linearBlue duration-150 hover:-rotate-90 md:right-16 md:block">
                         <FaGear className='h-full w-full p-2 animate-spin' />
                     </button>
                 </SpeedDialHandler>
@@ -55,23 +55,23 @@ export default function Settings({ setParticlesEnable }) {
                         onClick={() => {
                             setColorMode(colorMode === 'light' ? 'dark' : 'light');
                         }}
-                        className="h-16 w-16 cursor-pointer rounded-full border-4 border-black bg-[#0284c7] duration-150 hover:bg-orange-primary md:right-16 md:block"
+                        className="h-16 w-16 cursor-pointer rounded-full border-4 border-black bg-linearBlue duration-150 hover:bg-orange-primary md:right-16 md:block"
                     >
                         <ThemeButton theme={colorMode} />
                     </SpeedDialAction>
-                    <SpeedDialAction className="h-16 w-16 cursor-pointer rounded-full border-4 border-black bg-[#0284c7] duration-150 hover:bg-orange-primary md:right-16 md:block">
+                    <SpeedDialAction className="h-16 w-16 cursor-pointer rounded-full border-4 border-black bg-linearBlue duration-150 hover:bg-orange-primary md:right-16 md:block">
                         <AudioPlayer isPlaying={isPlaying} toggle={toggle} />
                     </SpeedDialAction>
                     <SpeedDialAction
                         onClick={toggleParticles}
-                        className="h-16 w-16 cursor-pointer rounded-full border-4 border-black bg-[#0284c7] duration-150 hover:bg-orange-primary md:right-16 md:block"
+                        className="h-16 w-16 cursor-pointer rounded-full border-4 border-black bg-linearBlue duration-150 hover:bg-orange-primary md:right-16 md:block"
                     >
                         <ButtonParticles isEnable={particlesEnabled} />
                     </SpeedDialAction>
                 </SpeedDialContent>
             </SpeedDial>
             {isPlaying && (
-                <div className="absolute flex translate-x-12 items-center rounded-md border-4 border-black bg-[#0284c7] px-3 shadow-button-card gap-2">
+                <div className="absolute flex translate-x-12 items-center rounded-md border-4 border-black bg-linearBlue px-3 shadow-button-card gap-2">
                     <AiFillSound className='h-8 w-8' />
                     <input
                         type="range"
