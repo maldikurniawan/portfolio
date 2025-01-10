@@ -46,7 +46,7 @@ const About = () => {
             className="text-[#0284c7]"
           />
         </div>
-        <div data-aos="fade-right" data-aos-delay="2000" className='text-justify'>
+        <div data-aos="fade-left" data-aos-delay="2000" className='text-justify'>
           I am a dedicated and passionate Front-End Web Developer with a keen eye for design and a strong foundation in modern web technologies. My focus lies in crafting seamless user experiences using ReactJS and NextJS, leveraging their power to build dynamic, responsive, and high-performance web applications. Explore my work to see how I bring ideas to life through clean code, innovative design, and a commitment to excellence.
         </div>
         <div className='flex mt-8 gap-2'>
