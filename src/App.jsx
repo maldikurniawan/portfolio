@@ -13,12 +13,19 @@ import {
   Projects,
   Educations,
 } from '@/pages'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function App() {
   const [showScrollToTop, setShowScrollToTop] = useState(false);
   const [particlesEnable, setParticlesEnable] = useState(false);
 
   useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+
     const handleScroll = () => {
       if (window.scrollY > 300) {
         setShowScrollToTop(true);

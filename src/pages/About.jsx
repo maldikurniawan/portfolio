@@ -1,18 +1,9 @@
-import React, { useEffect } from 'react'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import React from 'react'
 import { ScrambleText } from '@/components'
 import { TypeAnimation } from 'react-type-animation'
 
 const About = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
-  }, [])
   return (
-
     <div id='About' className='lg:px-[180px] px-10 bg-gradient-to-b from-linearBlue/40 via-white to-linearBlue/40 dark:from-black dark:via-paleBlue/90 dark:to-black min-h-screen lg:py-0 py-20 text-center gap-5 lg:text-start flex lg:flex-row flex-col justify-between lg:gap-28 items-center'>
       <img
         data-aos="fade-down"
@@ -46,7 +37,7 @@ const About = () => {
             className="text-[#0284c7]"
           />
         </div>
-        <div data-aos="fade-up" data-aos-delay="2000" className='text-justify'>
+        <div data-aos="fade-right" data-aos-delay="2000" className='text-justify'>
           I am a dedicated and passionate Front-End Web Developer with a keen eye for design and a strong foundation in modern web technologies. My focus lies in crafting seamless user experiences using ReactJS and NextJS, leveraging their power to build dynamic, responsive, and high-performance web applications. Explore my work to see how I bring ideas to life through clean code, innovative design, and a commitment to excellence.
         </div>
         <div className='flex mt-8 gap-2'>
