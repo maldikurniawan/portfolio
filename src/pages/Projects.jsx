@@ -94,6 +94,26 @@ const Projects = () => {
       description:
         "Graha Skrip Infra Prima is a website designed to promote products manufactured by the company. It serves as an online platform to showcase their offerings, attract customers, and provide detailed information about their products and services.",
     },
+    {
+      title: 'Hack Template',
+      type: 'Website',
+      img: './assets/heker.jpg',
+      link: 'https://heker.vercel.app/',
+      repo: 'https://github.com/maldikurniawan/',
+      language: 'ReactJS, Tailwind CSS, Typescript',
+      description:
+        "Hack Template is a hacker-themed website template built using ReactJS, Tailwind CSS, and TypeScript. It features a modern and edgy design, perfect for creating websites or applications with a tech-savvy and cyberpunk vibe.",
+    },
+    {
+      title: 'SIPELAN',
+      type: 'Android',
+      img: './assets/sipelan.png',
+      link: 'https://github.com/maldikurniawan/sipelan',
+      repo: 'https://github.com/maldikurniawan/sipelan',
+      language: 'Laravel, Bootstrap 5, MySQL',
+      description:
+        "SIPELAN is a system designed to manage academic activities efficiently. Built with Laravel, Bootstrap 5, and MySQL, this system streamlines processes such as scheduling, attendance tracking, and other essential tasks related to academic operations.",
+    },
   ];
 
   const [isModalOpen, setModalOpen] = useState(false);
