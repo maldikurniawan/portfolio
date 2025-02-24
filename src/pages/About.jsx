@@ -4,7 +4,7 @@ import { TypeAnimation } from 'react-type-animation'
 
 const About = () => {
   return (
-    <div id='About' className='lg:px-[180px] px-10 bg-gradient-to-b from-linearBlue/40 via-white to-linearBlue/40 dark:from-black dark:via-paleBlue/90 dark:to-black min-h-screen lg:py-0 py-20 text-center gap-5 lg:text-start flex lg:flex-row flex-col justify-between lg:gap-28 items-center'>
+    <div id='About' className='lg:px-[180px] px-10 bg-gradient-to-b from-linearBlue/40 via-white to-linearBlue/40 dark:from-black dark:via-paleBlue/90 dark:to-black lg:py-0 py-20 text-center gap-5 lg:text-start flex lg:flex-row flex-col lg:gap-28 items-center'>
       <img
         data-aos="fade-down"
         data-aos-delay="1000"
@@ -12,7 +12,6 @@ const About = () => {
         width={200}
         height={200}
         className='rounded border-2 p-1 mt-6 border-black img_glow'
-        alt=""
       />
       <div className='h-full lg:py-40 flex flex-col justify-center lg:items-start items-center text-paleBlue dark:text-linearBlue'>
         <div data-aos="fade-right" data-aos-delay="100" className='text-xl md:text-3xl font-semibold text-paleBlue dark:text-linearBlue text-nowrap'>

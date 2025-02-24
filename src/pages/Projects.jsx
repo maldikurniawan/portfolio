@@ -38,7 +38,7 @@ const Projects = () => {
       title: 'CACHESIM',
       type: 'Website',
       img: './assets/cache.jpg',
-      link: 'https://fe-cache-proxy.vercel.app/',
+      link: 'https://github.com/maldikurniawan/fe-cache-proxy',
       repo: 'https://github.com/maldikurniawan/fe-cache-proxy',
       language: 'ReactJS, Tailwind CSS, Django',
       description:
