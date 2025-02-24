@@ -100,7 +100,7 @@ const Projects = () => {
       img: './assets/heker.jpg',
       link: 'https://heker.vercel.app/',
       repo: 'https://github.com/maldikurniawan/',
-      language: 'ReactJS, Tailwind CSS, Typescript',
+      language: 'ReactJS, Tailwind CSS, Typescript, Framer Motion',
       description:
         "Hack Template is a hacker-themed website template built using ReactJS, Tailwind CSS, and TypeScript. It features a modern and edgy design, perfect for creating websites or applications with a tech-savvy and cyberpunk vibe.",
     },
@@ -113,6 +113,36 @@ const Projects = () => {
       language: 'Laravel, Bootstrap 5, MySQL',
       description:
         "SIPELAN is a system designed to manage academic activities efficiently. Built with Laravel, Bootstrap 5, and MySQL, this system streamlines processes such as scheduling, attendance tracking, and other essential tasks related to academic operations.",
+    },
+    {
+      title: 'Anilist',
+      type: 'Website',
+      img: './assets/animlist.png',
+      link: 'https://animlist.vercel.app/',
+      repo: 'https://github.com/maldikurniawan/anilist',
+      language: 'ReactJS, Tailwind CSS, Typescript',
+      description:
+        "Anilist is a web application that allows users to view a list of anime and movies. Built with ReactJS, Tailwind CSS, and TypeScript, it provides a simple and seamless browsing experience.",
+    },
+    {
+      title: 'Storeku',
+      type: 'Website',
+      img: './assets/storeku.png',
+      link: 'https://storeku.vercel.app/',
+      repo: 'https://github.com/maldikurniawan/topup-store',
+      language: 'ReactJS, Tailwind CSS, Typescript, Framer Motion',
+      description:
+        "Storeku is a web application for purchasing game top-ups and digital products. Built with ReactJS, Tailwind CSS, and TypeScript, it offers a seamless and user-friendly experience for browsing and completing transactions.",
+    },
+    {
+      title: 'Chessu',
+      type: 'Website',
+      img: './assets/chessu.png',
+      link: 'https://chessu.netlify.app/',
+      repo: 'https://github.com/maldikurniawan/catur',
+      language: 'ReactJS, Tailwind CSS',
+      description:
+        "Chessu is a web-based chess game built with ReactJS and Tailwind CSS. It allows players to enjoy classic chess matches locally with friends on the same device.",
     },
   ];
 
