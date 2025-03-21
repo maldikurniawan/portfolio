@@ -1,6 +1,7 @@
 import { useEffect, useState, Fragment } from "react";
 import { FaArrowUp } from "react-icons/fa";
 import { ThemeProvider } from "@/context/ThemeContext";
+import { Analytics } from "@vercel/analytics/react"
 import {
   Nav,
   Footer,
@@ -44,6 +45,7 @@ function App() {
 
   return (
     <Fragment>
+      <Analytics/>
       <ThemeProvider>
         <div className="relative overflow-x-hidden">
           {particlesEnable && <Particles />}
