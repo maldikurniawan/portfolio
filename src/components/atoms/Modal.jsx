@@ -14,8 +14,8 @@ const Modal = ({ isOpen, onClose, children }) => {
         // Delay the onClose action
         setTimeout(() => {
             onClose();
-            setIsClosing(false); // Reset closing state after the modal is removed
-        }, 300); // 300ms delay
+            setIsClosing(false);
+        }, 100);
     };
 
     useEffect(() => {

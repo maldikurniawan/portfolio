@@ -35,19 +35,19 @@ const Nav = () => {
   return (
     <>
       <header
-        className={`px-8 md:px-[90px] h-20 flex items-center justify-between w-full fixed top-0 z-40 transition-all duration-300 py-0 ${scrolled
-          ? "shadow bg-linearBlue/75 dark:bg-paleBlue/75 bg-opacity-90 backdrop-blur hover:bg-opacity-100"
-          : "shadow-none bg-transparent"
+        className={`px-8 md:px-20 h-20 flex bg-linearBlue/75 dark:bg-paleBlue/75 items-center justify-between w-full fixed top-0 z-40 transition-all duration-300 py-0 ${scrolled
+          ? "shadow bg-opacity-90 backdrop-blur hover:bg-opacity-100"
+          : "shadow-none"
           }`}
       >
-        <div className={`font-bold text-xl flex md:text-3xl items-center gap-4 justify-center ${scrolled ? 'text-paleBlue dark:text-linearBlue' : 'text-transparent'}`}>
+        <div className="font-bold text-xl flex md:text-3xl items-center gap-4 justify-center text-paleBlue dark:text-linearBlue">
           <ScrollLink
             to="About"
             smooth={true}
             duration={500}
             className="cursor-pointer"
           >
-            Aldi
+            {"<Aldi />"}
           </ScrollLink>
         </div>
 
@@ -93,7 +93,7 @@ const Nav = () => {
                 to={item.link}
                 smooth={true}
                 duration={500}
-                className="px-6 py-2 text-white hover:bg-white/20 font-medium whitespace-nowrap cursor-pointer rounded-lg"
+                className="px-6 py-2 text-white hover:bg-white/20 border-b-2 font-medium whitespace-nowrap cursor-pointer"
                 onClick={() => setNavOpen(false)}
               >
                 {item.title}

@@ -161,7 +161,7 @@ const Projects = () => {
 
   return (
     <div id="Projects" className='py-20 lg:px-20 bg-gradient-to-b dark:from-black dark:via-paleBlue/90 dark:to-black flex flex-col min-h-screen items-center justify-center'>
-      <div data-aos="fade-right" data-aos-delay="100" className='text-3xl font-semibold mb-20 leading-normal text-paleBlue'>
+      <div data-aos="fade-right" data-aos-delay="100" className='text-3xl z-10 font-semibold mb-20 leading-normal text-paleBlue'>
         <TextSection icon={<FcSmartphoneTablet />} text="My Project" />
       </div>
       <div className="flex flex-wrap justify-center justify-items-center gap-6">

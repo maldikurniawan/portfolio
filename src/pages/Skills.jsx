@@ -83,7 +83,7 @@ const Skills = () => {
 
   return (
     <div id='Skills' data-aos-delay="100" className='py-20 lg:px-20 flex flex-col bg-gradient-to-b from-linearBlue/40 via-white to-linearBlue/40 dark:from-black dark:via-paleBlue/90 dark:to-black min-h-screen items-center justify-center'>
-      <div data-aos="fade-right" className='text-3xl font-semibold mb-20 leading-normal text-paleBlue'>
+      <div data-aos="fade-right" className='text-3xl font-semibold mb-20 leading-normal text-paleBlue z-10'>
         <TextSection icon={<MdLanguage className='text-green-900'/>} text="Tech That I Use" />
       </div>
       <div className="flex flex-wrap justify-center justify-items-center gap-5 xl:gap-10 xl:px-40 pb-10">
