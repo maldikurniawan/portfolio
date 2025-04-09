@@ -144,6 +144,36 @@ const Projects = () => {
       description:
         "Chessu is a web-based chess game built with ReactJS and Tailwind CSS. It allows players to enjoy classic chess matches locally with friends on the same device.",
     },
+    {
+      title: 'SIRENBANGKOM',
+      type: 'Website',
+      img: './assets/sirenbangkom.png',
+      link: 'https://github.com/MKhalfanRD/sirenbangkom',
+      repo: 'https://github.com/MKhalfanRD/sirenbangkom',
+      language: 'Laravel, Bootstrap 5, MySQL',
+      description:
+        "SIRENBANGKOM is a web-based system for planning and managing competency development for ASN (State Civil Apparatus). Built with Laravel, Bootstrap 5, and MySQL, it helps government agencies identify training needs, propose development programs, and track progress. The system makes it easier to improve the skills and performance of civil servants.",
+    },
+    {
+      title: 'SICERDAS',
+      type: 'Website',
+      img: './assets/sicerdas.jpg',
+      link: 'https://sicerdas.vercel.app/',
+      repo: 'https://sicerdas.vercel.app/',
+      language: 'ReactJS, Tailwind CSS, Typescript, OpenRouterAI',
+      description:
+        "SICERDAS is a web application that utilizes OpenRouterAI to provide answers to user questions. Built with ReactJS, Tailwind CSS, and TypeScript, it offers a simple and intuitive interface for users to interact with the AI model.",
+    },
+    {
+      title: 'RostGram',
+      type: 'Website',
+      img: './assets/rostgram.jpg',
+      link: 'https://rostgram.vercel.app/',
+      repo: 'https://rostgram.vercel.app/',
+      language: 'ReactJS, Tailwind CSS, Typescript, OpenRouterAI, Framer Motion, Apify',
+      description:
+        "RostGram is a web application that allows users to scrape Instagram data using OpenRouterAI and Apify. Built with ReactJS, Tailwind CSS, and TypeScript, it provides a user-friendly interface for extracting and analyzing Instagram content.",
+    },
   ];
 
   const [isModalOpen, setModalOpen] = useState(false);
