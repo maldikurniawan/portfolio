@@ -89,7 +89,7 @@ const Projects = () => {
       type: 'Website',
       img: './assets/grahasip.jpg',
       link: 'https://grahasip.vercel.app/',
-      repo: 'https://github.com/maldikurniawan/fe-grahasip',
+      repo: 'https://grahasip.vercel.app/',
       language: 'NextJS, Tailwind CSS, Django',
       description:
         "Graha Skrip Infra Prima is a website designed to promote products manufactured by the company. It serves as an online platform to showcase their offerings, attract customers, and provide detailed information about their products and services.",
@@ -170,9 +170,19 @@ const Projects = () => {
       img: './assets/rostgram.jpg',
       link: 'https://rostgram.vercel.app/',
       repo: 'https://rostgram.vercel.app/',
-      language: 'ReactJS, Tailwind CSS, Typescript, OpenRouterAI, Framer Motion, Apify',
+      language: 'NextJS, Tailwind CSS, Typescript, OpenRouterAI, Framer Motion, Apify',
       description:
         "RostGram is a web application that allows users to scrape Instagram data using OpenRouterAI and Apify. Built with ReactJS, Tailwind CSS, and TypeScript, it provides a user-friendly interface for extracting and analyzing Instagram content.",
+    },
+    {
+      title: 'Animiru',
+      type: 'Website',
+      img: './assets/animiru.jpg',
+      link: 'https://animiru.vercel.app/',
+      repo: 'https://animiru.vercel.app/',
+      language: 'NextJS, Tailwind CSS, Typescript, NodeJS, Framer Motion',
+      description:
+        "Animiru is a web application that allows users to watch anime online. Built with NextJS, Tailwind CSS, and TypeScript, it provides a seamless and user-friendly experience for browsing and streaming anime content.",
     },
   ];
 
